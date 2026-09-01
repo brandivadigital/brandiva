@@ -1,353 +1,508 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
 
-    <title>Why Every School Needs a Professional Website in 2026 | BrandiVa Digital</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta name="description" content="Discover why every school needs a professional website in 2026. Learn how modern school websites improve admissions, trust, visibility and parent communication.">
+  <title>Why Every School Needs a Professional Website in 2026 | BrandiVa Digital</title>
 
-    <meta name="keywords" content="school website design, professional school website, school digital marketing, school website development, education marketing, school SEO">
+  <meta name="description" content="Discover why every school needs a professional website in 2026. Learn how school websites improve admissions, trust, visibility, communication and digital growth.">
 
-    <link rel="stylesheet" href="style.css">
+  <meta name="keywords" content="school website design, professional school website, school website development, education marketing, school digital marketing, SEO for schools">
 
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background: #f7f5f0;
-            color: #1f2d3d;
-            line-height: 1.8;
-        }
+  <meta name="author" content="BrandiVa Digital">
 
-        .blog-container {
-            max-width: 850px;
-            margin: auto;
-            padding: 60px 20px;
-        }
+  <style>
 
-        .blog-container h1 {
-            font-size: 48px;
-            line-height: 1.2;
-            margin-bottom: 20px;
-        }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-        .blog-container h2 {
-            font-size: 28px;
-            margin-top: 45px;
-            margin-bottom: 15px;
-        }
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f7f5f1;
+      color: #243746;
+      line-height: 1.8;
+    }
 
-        .blog-container p {
-            font-size: 18px;
-            margin-bottom: 20px;
-        }
+    header {
+      width: 100%;
+      padding: 24px 8%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #f7f5f1;
+      border-bottom: 1px solid #e6e1d8;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
 
-        .blog-container ul {
-            margin-bottom: 25px;
-        }
+    .logo {
+      font-size: 24px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      color: #243746;
+    }
 
-        .blog-container li {
-            font-size: 17px;
-            margin-bottom: 8px;
-        }
+    .logo span {
+      color: #a87558;
+    }
 
-        .blog-tag {
-            color: #8a6d3b;
-            font-weight: bold;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            font-size: 13px;
-        }
+    nav a {
+      text-decoration: none;
+      color: #243746;
+      margin-left: 28px;
+      font-size: 14px;
+      transition: 0.3s;
+    }
 
-        .back-home {
-            display: inline-block;
-            margin-bottom: 30px;
-            color: #1f2d3d;
-            text-decoration: none;
-            font-weight: bold;
-        }
+    nav a:hover {
+      color: #a87558;
+    }
 
-        .cta {
-            margin-top: 50px;
-            padding: 35px;
-            background: #1f2d3d;
-            color: white;
-            text-align: center;
-            border-radius: 4px;
-        }
+    .hero {
+      max-width: 1100px;
+      margin: auto;
+      padding: 100px 30px 70px;
+      text-align: center;
+    }
 
-        .cta h2 {
-            margin-top: 0;
-            color: white;
-        }
+    .tag {
+      display: inline-block;
+      font-size: 12px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: #a87558;
+      margin-bottom: 25px;
+      font-weight: bold;
+    }
 
-        .cta a {
-            display: inline-block;
-            margin-top: 15px;
-            padding: 12px 25px;
-            background: #c89b5a;
-            color: white;
-            text-decoration: none;
-            font-weight: bold;
-        }
+    .hero h1 {
+      font-family: Georgia, serif;
+      font-size: 58px;
+      line-height: 1.15;
+      max-width: 900px;
+      margin: auto;
+      color: #243746;
+    }
 
-        @media (max-width: 768px) {
-            .blog-container {
-                padding: 40px 20px;
-            }
+    .hero p {
+      max-width: 700px;
+      margin: 25px auto 0;
+      font-size: 18px;
+      color: #64707a;
+    }
 
-            .blog-container h1 {
-                font-size: 36px;
-            }
+    .article {
+      max-width: 850px;
+      margin: auto;
+      background: #ffffff;
+      padding: 70px;
+      margin-bottom: 80px;
+      box-shadow: 0 10px 40px rgba(0,0,0,0.05);
+    }
 
-            .blog-container h2 {
-                font-size: 25px;
-            }
-        }
-    </style>
+    .article h2 {
+      font-family: Georgia, serif;
+      font-size: 32px;
+      margin-top: 50px;
+      margin-bottom: 18px;
+      color: #243746;
+      line-height: 1.3;
+    }
+
+    .article p {
+      font-size: 17px;
+      color: #4d5963;
+      margin-bottom: 20px;
+    }
+
+    .article ul {
+      margin: 20px 0 25px 25px;
+    }
+
+    .article li {
+      margin-bottom: 8px;
+      color: #4d5963;
+      font-size: 17px;
+    }
+
+    .highlight {
+      border-left: 4px solid #a87558;
+      padding: 25px;
+      background: #faf7f2;
+      margin: 35px 0;
+      font-size: 19px;
+      font-family: Georgia, serif;
+      color: #243746;
+    }
+
+    .cta {
+      max-width: 850px;
+      margin: 0 auto 80px;
+      padding: 60px;
+      background: #243746;
+      color: white;
+      text-align: center;
+    }
+
+    .cta h2 {
+      font-family: Georgia, serif;
+      font-size: 38px;
+      margin-bottom: 15px;
+    }
+
+    .cta p {
+      color: #d7dde1;
+      max-width: 600px;
+      margin: auto;
+      margin-bottom: 30px;
+    }
+
+    .cta a {
+      display: inline-block;
+      background: #c08a68;
+      color: white;
+      text-decoration: none;
+      padding: 14px 30px;
+      font-size: 14px;
+      transition: 0.3s;
+    }
+
+    .cta a:hover {
+      background: white;
+      color: #243746;
+    }
+
+    footer {
+      background: #1d2d38;
+      color: #cbd2d6;
+      text-align: center;
+      padding: 35px 20px;
+      font-size: 14px;
+    }
+
+    footer a {
+      color: #d9a382;
+      text-decoration: none;
+    }
+
+    @media (max-width: 768px) {
+
+      header {
+        padding: 18px 5%;
+        flex-direction: column;
+        gap: 15px;
+      }
+
+      nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+      }
+
+      nav a {
+        margin-left: 0;
+      }
+
+      .hero {
+        padding: 70px 20px 50px;
+      }
+
+      .hero h1 {
+        font-size: 40px;
+      }
+
+      .article {
+        margin: 20px;
+        padding: 35px 25px;
+      }
+
+      .article h2 {
+        font-size: 28px;
+      }
+
+      .cta {
+        margin: 20px;
+        padding: 40px 25px;
+      }
+
+      .cta h2 {
+        font-size: 30px;
+      }
+    }
+
+  </style>
 </head>
 
 <body>
 
-    <main class="blog-container">
+<header>
+  <div class="logo">BRANDI<span>VA</span></div>
 
-        <a href="index.html" class="back-home">← Back to Home</a>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="schools.html">For Schools</a>
+    <a href="services.html">Services</a>
+    <a href="work.html">Our Work</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
 
-        <div class="blog-tag">School Website & Digital Growth</div>
 
-        <h1>Why Every School Needs a Professional Website in 2026</h1>
+<section class="hero">
 
-        <p>
-            In 2026, a school’s website is no longer just an additional digital feature—it has become an essential part of its identity.
-        </p>
+  <div class="tag">BrandiVa Insights</div>
 
-        <p>
-            Before visiting a school, parents increasingly search online to understand its academic environment, facilities, achievements, admission process, and overall reputation. In many cases, a school website creates the first impression long before a parent walks through the school gate.
-        </p>
+  <h1>Why Every School Needs a Professional Website in 2026</h1>
 
-        <p>
-            That is why every school needs a professional, modern, and informative website.
-        </p>
+  <p>
+    A school's digital presence is no longer optional.
+    It is becoming one of the first places where trust,
+    perception and important decisions begin.
+  </p>
 
+</section>
 
-        <h2>Parents Search Online Before Choosing a School</h2>
 
-        <p>
-            Choosing the right school is one of the most important decisions for parents. Naturally, they want to research before making that decision.
-        </p>
+<article class="article">
 
-        <p>Parents often search online for information such as:</p>
+  <p>
+    In 2026, a school's website is no longer just an additional digital feature—it has become an essential part of its identity.
+    Before visiting a school, parents increasingly search online to understand its academic environment, facilities, achievements,
+    admission process, and overall reputation.
+  </p>
 
-        <ul>
-            <li>School admission process</li>
-            <li>Academic programs</li>
-            <li>Faculty details</li>
-            <li>Infrastructure and facilities</li>
-            <li>Student achievements</li>
-            <li>Sports and extracurricular activities</li>
-            <li>School location and contact information</li>
-            <li>Fees and eligibility details</li>
-        </ul>
+  <p>
+    In many cases, a school website creates the first impression long before a parent walks through the school gate.
+    That is why every school needs a professional, modern, and informative website.
+  </p>
 
-        <p>
-            A professional school website makes this information easily accessible and helps parents understand what the institution offers.
-        </p>
 
+  <h2>Parents Search Online Before Choosing a School</h2>
 
-        <h2>A Website Creates a Powerful First Impression</h2>
+  <p>
+    Choosing the right school is one of the most important decisions for parents.
+    Naturally, they want to research before making that decision.
+  </p>
 
-        <p>
-            Your website is often the first interaction between your school and a potential parent.
-        </p>
+  <p>Parents often search online for information such as:</p>
 
-        <p>
-            An outdated, slow, or poorly designed website can create a negative impression. On the other hand, a modern and professionally designed school website communicates trust, quality, and credibility.
-        </p>
+  <ul>
+    <li>School admission process</li>
+    <li>Academic programs</li>
+    <li>Faculty details</li>
+    <li>Infrastructure and facilities</li>
+    <li>Student achievements</li>
+    <li>Sports and extracurricular activities</li>
+    <li>School location and contact information</li>
+    <li>Fees and eligibility details</li>
+  </ul>
 
-        <p>
-            A good website should reflect the personality and values of the institution while presenting information in a clear and engaging way.
-        </p>
+  <p>
+    A professional school website makes this information easily accessible and helps parents understand what the institution offers.
+  </p>
 
-        <p>
-            In today's digital world, the quality of your online presence influences how people perceive your school.
-        </p>
 
+  <h2>A Website Creates a Powerful First Impression</h2>
 
-        <h2>Make the Admission Process Easier</h2>
+  <p>
+    Your website is often the first interaction between your school and a potential parent.
+  </p>
 
-        <p>
-            A professional school website can simplify the admission journey for parents.
-        </p>
+  <p>
+    An outdated, slow, or poorly designed website can create a negative impression.
+    On the other hand, a modern and professionally designed school website communicates trust, quality, and credibility.
+  </p>
 
-        <p>
-            Instead of repeatedly calling or visiting the school for basic information, parents can find important details online.
-        </p>
+  <p>
+    A good website should reflect the personality and values of the institution while presenting information in a clear and engaging way.
+    In today's digital world, the quality of your online presence influences how people perceive your school.
+  </p>
 
-        <p>A well-designed website can provide:</p>
 
-        <ul>
-            <li>Admission guidelines</li>
-            <li>Important dates</li>
-            <li>Eligibility criteria</li>
-            <li>Required documents</li>
-            <li>Online enquiry forms</li>
-            <li>Downloadable brochures</li>
-        </ul>
+  <h2>Make the Admission Process Easier</h2>
 
-        <p>
-            This not only improves the parent experience but also saves valuable time for school administrators.
-        </p>
+  <p>
+    A professional school website can simplify the admission journey for parents.
+    Instead of repeatedly calling or visiting the school for basic information, parents can find important details online.
+  </p>
 
+  <p>A well-designed website can provide:</p>
 
-        <h2>Showcase Your School's Achievements</h2>
+  <ul>
+    <li>Admission guidelines</li>
+    <li>Important dates</li>
+    <li>Eligibility criteria</li>
+    <li>Required documents</li>
+    <li>Online enquiry forms</li>
+    <li>Downloadable brochures</li>
+  </ul>
 
-        <p>
-            Every school has achievements worth celebrating.
-        </p>
+  <p>
+    This not only improves the parent experience but also saves valuable time for school administrators.
+  </p>
 
-        <p>
-            Whether it is academic excellence, sports victories, cultural programs, innovative teaching methods, or student success stories, a website provides the perfect platform to showcase them.
-        </p>
 
-        <p>Professional school website design allows institutions to present their strengths through:</p>
+  <h2>Showcase Your School's Achievements</h2>
 
-        <ul>
-            <li>Photo galleries</li>
-            <li>Event updates</li>
-            <li>Student achievements</li>
-            <li>Awards and recognitions</li>
-            <li>Faculty introductions</li>
-            <li>Campus facilities</li>
-            <li>Success stories</li>
-        </ul>
+  <p>
+    Every school has achievements worth celebrating.
+    Whether it is academic excellence, sports victories, cultural programs, innovative teaching methods,
+    or student success stories, a website provides the perfect platform to showcase them.
+  </p>
 
+  <p>Professional school website design allows institutions to present their strengths through:</p>
 
-        <h2>Build Trust With Parents</h2>
+  <ul>
+    <li>Photo galleries</li>
+    <li>Event updates</li>
+    <li>Student achievements</li>
+    <li>Awards and recognitions</li>
+    <li>Faculty introductions</li>
+    <li>Campus facilities</li>
+    <li>Success stories</li>
+  </ul>
 
-        <p>
-            Trust plays a major role when parents choose an educational institution.
-        </p>
+  <p>
+    Your website becomes a digital window into the life and culture of your school.
+  </p>
 
-        <p>
-            A professional and regularly updated website makes a school appear more transparent, organized, and credible.
-        </p>
 
-        <p>
-            When parents can easily find authentic information about the school, its faculty, facilities, achievements, and admission process, they feel more confident about the institution.
-        </p>
+  <h2>Build Trust With Parents</h2>
 
-        <p>
-            In 2026, a strong digital presence is becoming an important part of building institutional trust.
-        </p>
+  <p>
+    Trust plays a major role when parents choose an educational institution.
+    A professional and regularly updated website makes a school appear more transparent, organized, and credible.
+  </p>
 
+  <p>
+    When parents can easily find authentic information about the school, its faculty,
+    facilities, achievements, and admission process, they feel more confident about the institution.
+  </p>
 
-        <h2>Mobile-Friendly Design Is No Longer Optional</h2>
+  <p>
+    In 2026, a strong digital presence is becoming an important part of building institutional trust.
+  </p>
 
-        <p>
-            Most parents now search for schools using smartphones.
-        </p>
 
-        <p>
-            If a website is difficult to use on mobile devices, visitors may leave before exploring important information.
-        </p>
+  <h2>Mobile-Friendly Design Is No Longer Optional</h2>
 
-        <p>A modern school website should be:</p>
+  <p>
+    Most parents now search for schools using smartphones.
+    If a website is difficult to use on mobile devices, visitors may leave before exploring important information.
+  </p>
 
-        <ul>
-            <li>Mobile responsive</li>
-            <li>Fast loading</li>
-            <li>Easy to navigate</li>
-            <li>Visually appealing</li>
-            <li>Search engine optimized</li>
-        </ul>
+  <p>A modern school website should be:</p>
 
+  <ul>
+    <li>Mobile responsive</li>
+    <li>Fast loading</li>
+    <li>Easy to navigate</li>
+    <li>Visually appealing</li>
+    <li>Search engine optimized</li>
+  </ul>
 
-        <h2>Improve Visibility on Google</h2>
+  <p>
+    A mobile-friendly website ensures that parents can access information anytime, anywhere.
+  </p>
 
-        <p>
-            A professional website also helps schools improve their presence on search engines.
-        </p>
 
-        <p>Parents frequently search for terms like:</p>
+  <h2>Improve Visibility on Google</h2>
 
-        <ul>
-            <li>Best schools in their city</li>
-            <li>CBSE schools near me</li>
-            <li>Private schools in their city</li>
-            <li>School admissions 2026</li>
-            <li>Best English medium schools</li>
-        </ul>
+  <p>
+    A professional website also helps schools improve their presence on search engines.
+  </p>
 
-        <p>
-            With proper SEO and relevant website content, schools can improve their chances of appearing in these searches.
-        </p>
+  <p>Parents frequently search for terms like:</p>
 
-        <p>
-            This makes a professional website an important part of a school's long-term digital growth strategy.
-        </p>
+  <ul>
+    <li>Best schools in their city</li>
+    <li>CBSE schools near me</li>
+    <li>Private schools in their city</li>
+    <li>School admissions 2026</li>
+    <li>Best English medium schools</li>
+  </ul>
 
+  <p>
+    With proper SEO and relevant website content, schools can improve their chances of appearing in these searches.
+    This makes a professional website an important part of a school's long-term digital growth strategy.
+  </p>
 
-        <h2>Stay Competitive in a Digital-First World</h2>
 
-        <p>
-            Education is becoming increasingly competitive.
-        </p>
+  <h2>Stay Competitive in a Digital-First World</h2>
 
-        <p>
-            Schools are investing in better infrastructure, branding, communication, and digital presence. Parents now compare institutions not only based on recommendations but also on the information they find online.
-        </p>
+  <p>
+    Education is becoming increasingly competitive.
+    Schools are investing in better infrastructure, branding, communication, and digital presence.
+  </p>
 
-        <p>
-            A professional website helps schools stay relevant and competitive in this changing environment.
-        </p>
+  <p>
+    Parents now compare institutions not only based on recommendations but also on the information they find online.
+    A professional website helps schools stay relevant and competitive in this changing environment.
+  </p>
 
-        <p>
-            The question is no longer whether a school needs a website.
-        </p>
+  <div class="highlight">
+    The question is no longer whether a school needs a website.
+    The real question is: What do parents see when they search for your school online?
+  </div>
 
-        <p>
-            <strong>What do parents see when they search for your school online?</strong>
-        </p>
 
+  <h2>The Bottom Line</h2>
 
-        <h2>The Bottom Line</h2>
+  <p>
+    In 2026, a professional school website is not simply a digital brochure.
+    It is a platform for communication, trust, branding, admissions, and growth.
+  </p>
 
-        <p>
-            In 2026, a professional school website is not simply a digital brochure.
-        </p>
+  <p>
+    A well-designed website helps schools tell their story, showcase their achievements,
+    connect with parents, and create a strong first impression.
+  </p>
 
-        <p>
-            It is a platform for communication, trust, branding, admissions, and growth.
-        </p>
+  <p>
+    Because in a digital-first world, your school's online presence is often the beginning
+    of your relationship with every new parent.
+  </p>
 
-        <p>
-            A well-designed website helps schools tell their story, showcase their achievements, connect with parents, and create a strong first impression.
-        </p>
+  <div class="highlight">
+    And that first impression matters.
+  </div>
 
-        <p>
-            Because in a digital-first world, your school's online presence is often the beginning of your relationship with every new parent.
-        </p>
+</article>
 
-        <p>
-            <strong>And that first impression matters.</strong>
-        </p>
 
+<section class="cta">
 
-        <section class="cta">
+  <h2>Is Your School Ready for the Digital-First Future?</h2>
 
-            <h2>Looking to Build a Professional School Website?</h2>
+  <p>
+    BrandiVa Digital helps schools build meaningful digital identities through
+    professional websites, storytelling, branding and digital growth strategies.
+  </p>
 
-            <p>
-                BrandiVa Digital helps schools build meaningful digital identities through professional websites, storytelling, branding and digital growth strategies.
-            </p>
+  <a href="contact.html">Let's Talk About Your School</a>
 
-            <a href="contact.html">Let's Talk</a>
+</section>
 
-        </section>
 
-    </main>
+<footer>
+
+  <p>
+    © 2026 BrandiVa Digital · Digital Storytelling & Growth for Schools
+  </p>
+
+  <p style="margin-top:8px;">
+    <a href="mailto:help@brandivadigital.com">help@brandivadigital.com</a>
+  </p>
+
+</footer>
 
 </body>
 </html>
