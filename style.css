@@ -17,38 +17,3 @@
 .device-visual{margin-top:55px;min-height:420px;background:linear-gradient(120deg,rgba(17,36,47,.18),rgba(17,36,47,.05)),url('https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1800&q=90') center/cover;border-radius:3px;position:relative}.device-visual:after{content:'A digital presence should feel as real as the institution behind it.';position:absolute;left:28px;bottom:28px;max-width:430px;color:#fff;font-family:'Playfair Display',serif;font-size:clamp(28px,4vw,48px);line-height:1.08}
 .image-card{min-height:360px;background:center/cover;margin-top:30px}
 @media(max-width:800px){.pagehero.visual{min-height:500px}.photo-grid{grid-template-columns:1fr;min-height:auto}.photo-grid .photo:first-child{grid-row:auto;min-height:420px}.photo-grid .photo{min-height:280px}.visual-split{grid-template-columns:1fr}.visual-split .visual-image{min-height:430px}.pagehero.visual .container{padding-bottom:55px}}
-
-/* PHOTO GRID FIX */
-.photo-grid {
-  display: grid;
-  grid-template-columns: 1.2fr 0.8fr 0.8fr;
-  gap: 14px;
-  min-height: 520px;
-}
-
-.photo-grid .photo {
-  min-height: 520px;
-  background-size: cover !important;
-  background-position: center !important;
-  background-repeat: no-repeat !important;
-  position: relative;
-  overflow: hidden;
-}
-
-.photo-caption {
-  position: absolute;
-  left: 24px;
-  bottom: 20px;
-  z-index: 2;
-}
-
-@media (max-width: 800px) {
-  .photo-grid {
-    grid-template-columns: 1fr;
-    min-height: auto;
-  }
-
-  .photo-grid .photo {
-    min-height: 360px;
-  }
-}
