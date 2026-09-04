@@ -1,785 +1,664 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>BrandiVa Digital | Digital Growth Partner for Schools</title>
-
-  <meta name="description"
-    content="BrandiVa Digital helps schools build a stronger digital presence through websites, branding, storytelling, SEO and digital marketing.">
-
-  <meta name="keywords"
-    content="school digital marketing, school website design, school branding, education marketing, school SEO, school social media, school admissions marketing">
-
-  <meta name="author" content="BrandiVa Digital">
-  <meta name="robots" content="index, follow">
-
+  <meta name="description" content="BrandiVa Digital helps schools build stronger digital presence through strategy, storytelling, websites, content and digital marketing.">
+  <meta name="keywords" content="school digital marketing, school website, school branding, education marketing, digital marketing for schools, BrandiVa Digital">
   <link rel="canonical" href="https://brandivadigital.com/">
 
-  <meta property="og:title"
-    content="BrandiVa Digital | Digital Growth Partner for Schools">
-
-  <meta property="og:description"
-    content="Every school has a story. We help the digital world see it.">
-
+  <meta property="og:title" content="BrandiVa Digital | Digital Growth Partner for Schools">
+  <meta property="og:description" content="Helping schools be seen, remembered and chosen in a digital world.">
+  <meta property="og:url" content="https://brandivadigital.com/">
   <meta property="og:type" content="website">
-
-  <meta property="og:url"
-    content="https://brandivadigital.com/">
 
   <link rel="stylesheet" href="style.css">
 
-
   <style>
+    /* =========================
+       BRANDIVA HOMEPAGE
+       Refined editorial layout
+       ========================= */
 
-    :root {
-      --home-bg: #f4f0e7;
-      --home-paper: #faf9f5;
-      --home-dark: #17232a;
-      --home-muted: #69747a;
-      --home-line: rgba(23,35,42,.15);
+    .home {
+      overflow:hidden;
     }
-
-    body {
-      margin: 0;
-      background: var(--home-bg);
-      color: var(--home-dark);
-    }
-
-    .home-page {
-      overflow: hidden;
-    }
-
-    .home-container {
-      width: min(1120px, calc(100% - 42px));
-      margin: 0 auto;
-    }
-
-    .home-label {
-      font-size: 11px;
-      letter-spacing: .17em;
-      text-transform: uppercase;
-      color: var(--home-muted);
-      font-weight: 600;
-    }
-
 
     /* HERO */
-
     .home-hero {
-      padding: 110px 0 90px;
-    }
-
-    .home-hero-grid {
-      display: grid;
-      grid-template-columns: 1.3fr .7fr;
-      gap: 70px;
-      align-items: end;
-    }
-
-    .home-hero h1 {
-      font-family: Georgia, "Times New Roman", serif;
-      font-size: clamp(62px, 9vw, 118px);
-      line-height: .88;
-      letter-spacing: -.065em;
-      font-weight: 500;
-      margin: 35px 0 0;
-    }
-
-    .home-hero h1 span {
-      display: block;
-      color: var(--home-muted);
+      background:var(--cream);
+      min-height:78vh;
+      display:grid;
+      grid-template-columns:1fr 1fr;
     }
 
     .home-hero-copy {
-      padding-bottom: 8px;
+      padding:80px 7vw;
+      display:flex;
+      flex-direction:column;
+      justify-content:center;
     }
 
-    .home-hero-copy p {
-      font-size: 18px;
-      line-height: 1.7;
-      color: var(--home-muted);
-      margin: 0 0 25px;
+    .home-label {
+      font-size:11px;
+      letter-spacing:2px;
+      text-transform:uppercase;
+      font-weight:700;
+      color:var(--accent);
+      margin-bottom:20px;
     }
 
-    .home-link {
-      display: inline-flex;
-      gap: 10px;
-      color: var(--home-dark);
-      border-bottom: 1px solid var(--home-dark);
-      padding-bottom: 6px;
-      font-size: 13px;
-      font-weight: 600;
+    .home-hero h1 {
+      font-family:'Playfair Display',serif;
+      font-size:clamp(52px,6vw,78px);
+      line-height:1.02;
+      letter-spacing:-2px;
+      font-weight:600;
+      margin:0 0 25px;
+      max-width:650px;
     }
 
-
-    /* HERO IMAGE */
+    .home-hero p {
+      max-width:520px;
+      font-size:17px;
+      color:var(--muted);
+      margin:0 0 30px;
+    }
 
     .home-hero-image {
-      margin-top: 55px;
-      height: 460px;
-      background:
-        linear-gradient(rgba(23,35,42,.08),rgba(23,35,42,.18)),
-        url('hero section.jpg') center/cover no-repeat;
+      min-height:620px;
+      background:url('hero section.jpg') center/cover no-repeat;
     }
 
-
     /* STORY */
-
     .home-story {
-      background: var(--home-paper);
-      padding: 105px 0;
+      padding:90px 0;
+      background:var(--paper);
     }
 
     .home-story-grid {
-      display: grid;
-      grid-template-columns: .75fr 1.25fr;
-      gap: 90px;
-      align-items: start;
-    }
-
-    .home-story h2 {
-      font-family: Georgia, "Times New Roman", serif;
-      font-size: clamp(45px, 6vw, 75px);
-      line-height: .94;
-      letter-spacing: -.055em;
-      font-weight: 500;
-      margin: 30px 0 0;
-    }
-
-    .home-story-copy {
-      padding-top: 5px;
-    }
-
-    .home-story-copy p {
-      max-width: 650px;
-      font-size: 18px;
-      line-height: 1.8;
-      color: var(--home-muted);
-      margin: 0 0 25px;
+      display:grid;
+      grid-template-columns:.8fr 1.2fr;
+      gap:75px;
+      align-items:center;
     }
 
     .home-story-image {
-      margin-top: 55px;
-      height: 360px;
-      background:
-        url('chapter 1.jpg') center/cover no-repeat;
+      height:500px;
+      background:url('chapter 1.jpg') center/cover no-repeat;
     }
 
+    .home-story-copy {
+      max-width:650px;
+    }
+
+    .home-story-copy h2 {
+      font-size:clamp(30px,3.5vw,46px);
+      line-height:1.12;
+      letter-spacing:-.7px;
+      margin:10px 0 20px;
+      font-family:'Playfair Display',serif;
+      font-weight:600;
+    }
+
+    .home-story-copy p {
+      color:var(--muted);
+      font-size:17px;
+      max-width:600px;
+      margin-bottom:18px;
+    }
 
     /* PARENT JOURNEY */
-
     .home-journey {
-      padding: 105px 0;
+      padding:85px 0;
+      background:var(--sky);
     }
 
-    .home-journey h2 {
-      max-width: 760px;
-      font-family: Georgia, "Times New Roman", serif;
-      font-size: clamp(45px, 6vw, 75px);
-      line-height: .94;
-      letter-spacing: -.055em;
-      font-weight: 500;
-      margin: 30px 0 60px;
+    .home-journey-intro {
+      max-width:700px;
+      margin-bottom:50px;
+    }
+
+    .home-journey-intro h2 {
+      font-size:clamp(30px,3.5vw,46px);
+      line-height:1.12;
+      letter-spacing:-.7px;
+      margin:10px 0 16px;
+      font-family:'Playfair Display',serif;
+      font-weight:600;
+    }
+
+    .home-journey-intro p {
+      color:var(--muted);
+      font-size:17px;
+      max-width:620px;
     }
 
     .journey-list {
-      border-top: 1px solid var(--home-line);
+      border-top:1px solid rgba(23,48,66,.15);
     }
 
     .journey-item {
-      display: grid;
-      grid-template-columns: 70px 180px 1fr;
-      gap: 25px;
-      padding: 25px 0;
-      border-bottom: 1px solid var(--home-line);
-      align-items: center;
+      display:grid;
+      grid-template-columns:55px 1fr 1.5fr;
+      gap:25px;
+      padding:25px 0;
+      border-bottom:1px solid rgba(23,48,66,.15);
+      align-items:start;
     }
 
     .journey-number {
-      color: var(--home-muted);
-      font-size: 11px;
+      color:var(--accent);
+      font-size:13px;
+      font-weight:700;
     }
 
-    .journey-title {
-      font-family: Georgia, "Times New Roman", serif;
-      font-size: 27px;
+    .journey-item h3 {
+      margin:0;
+      font-size:20px;
+      font-weight:600;
     }
 
-    .journey-text {
-      color: var(--home-muted);
-      font-size: 15px;
-      line-height: 1.6;
+    .journey-item p {
+      margin:0;
+      color:var(--muted);
+      font-size:15px;
     }
-
 
     /* FRAMEWORK */
-
     .home-framework {
-      background: var(--home-paper);
-      padding: 105px 0;
+      padding:95px 0;
+      background:var(--paper);
     }
 
-    .home-framework h2 {
-      max-width: 800px;
-      font-family: Georgia, "Times New Roman", serif;
-      font-size: clamp(45px, 6vw, 78px);
-      line-height: .94;
-      letter-spacing: -.055em;
-      font-weight: 500;
-      margin: 30px 0 65px;
+    .home-framework-head {
+      display:flex;
+      justify-content:space-between;
+      align-items:end;
+      gap:40px;
+      margin-bottom:55px;
     }
 
-    .framework-list {
-      border-top: 1px solid var(--home-line);
+    .home-framework-head h2 {
+      font-size:clamp(30px,3.5vw,46px);
+      line-height:1.12;
+      letter-spacing:-.7px;
+      margin:10px 0 0;
+      font-family:'Playfair Display',serif;
+      font-weight:600;
+      max-width:520px;
     }
 
-    .framework-row {
-      display: grid;
-      grid-template-columns: 70px 230px 1fr;
-      gap: 25px;
-      padding: 30px 0;
-      border-bottom: 1px solid var(--home-line);
+    .home-framework-head p {
+      max-width:380px;
+      color:var(--muted);
+      font-size:15px;
+      margin:0;
     }
 
-    .framework-row-number {
-      font-size: 11px;
-      color: var(--home-muted);
+    .framework-grid {
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      border-top:1px solid var(--line);
     }
 
-    .framework-row-title {
-      font-family: Georgia, "Times New Roman", serif;
-      font-size: 30px;
+    .framework-item {
+      padding:30px 28px 25px 0;
+      border-bottom:1px solid var(--line);
     }
 
-    .framework-row-text {
-      color: var(--home-muted);
-      font-size: 16px;
-      line-height: 1.65;
-      max-width: 520px;
+    .framework-item + .framework-item {
+      padding-left:28px;
+      border-left:1px solid var(--line);
     }
 
+    .framework-item span {
+      display:block;
+      font-size:11px;
+      letter-spacing:1.5px;
+      color:var(--accent);
+      font-weight:700;
+      margin-bottom:15px;
+    }
+
+    .framework-item h3 {
+      font-size:25px;
+      margin:0 0 10px;
+      font-weight:600;
+    }
+
+    .framework-item p {
+      color:var(--muted);
+      font-size:15px;
+      margin:0;
+      max-width:300px;
+    }
 
     /* VISUAL BREAK */
-
     .home-visual {
-      height: 430px;
+      min-height:470px;
       background:
-        linear-gradient(rgba(23,35,42,.1),rgba(23,35,42,.3)),
+        linear-gradient(rgba(17,36,47,.12),rgba(17,36,47,.12)),
         url('learning section.jpg') center/cover no-repeat;
-      position: relative;
     }
-
-    .home-visual-text {
-      position: absolute;
-      left: max(21px, calc((100% - 1120px) / 2));
-      bottom: 45px;
-      max-width: 650px;
-      color: white;
-      font-family: Georgia, "Times New Roman", serif;
-      font-size: clamp(38px, 5vw, 65px);
-      line-height: .95;
-      letter-spacing: -.045em;
-    }
-
 
     /* PHILOSOPHY */
-
     .home-philosophy {
-      padding: 105px 0;
+      padding:95px 0;
+      background:var(--cream);
     }
 
     .home-philosophy-inner {
-      max-width: 850px;
+      max-width:900px;
     }
 
-    .home-philosophy h2 {
-      font-family: Georgia, "Times New Roman", serif;
-      font-size: clamp(45px, 6vw, 78px);
-      line-height: .94;
-      letter-spacing: -.055em;
-      font-weight: 500;
-      margin: 30px 0;
+    .home-philosophy blockquote {
+      margin:15px 0 25px;
+      font-family:'Playfair Display',serif;
+      font-size:clamp(30px,4vw,52px);
+      line-height:1.18;
+      letter-spacing:-.7px;
+      font-weight:500;
     }
 
     .home-philosophy p {
-      max-width: 700px;
-      font-size: 18px;
-      line-height: 1.8;
-      color: var(--home-muted);
+      color:var(--muted);
+      max-width:650px;
+      font-size:16px;
     }
-
 
     /* CTA */
-
     .home-cta {
-      background: var(--home-dark);
-      color: white;
-      padding: 115px 0;
-      text-align: center;
+      padding:85px 0;
+      background:var(--dark);
+      color:white;
     }
 
-    .home-cta .home-label {
-      color: rgba(255,255,255,.5);
+    .home-cta-inner {
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      gap:40px;
     }
 
     .home-cta h2 {
-      max-width: 850px;
-      margin: 35px auto 25px;
-      font-family: Georgia, "Times New Roman", serif;
-      font-size: clamp(50px, 7vw, 90px);
-      line-height: .9;
-      letter-spacing: -.06em;
-      font-weight: 500;
+      font-family:'Playfair Display',serif;
+      font-size:clamp(32px,4vw,50px);
+      line-height:1.1;
+      margin:8px 0 12px;
+      font-weight:500;
+      color:white;
     }
 
     .home-cta p {
-      max-width: 600px;
-      margin: 0 auto 35px;
-      color: rgba(255,255,255,.6);
-      font-size: 17px;
-      line-height: 1.7;
+      color:#cbd6d7;
+      margin:0;
+      max-width:500px;
     }
-
-    .home-cta a {
-      display: inline-flex;
-      background: white;
-      color: var(--home-dark);
-      padding: 16px 25px;
-      font-size: 13px;
-      font-weight: 600;
-    }
-
 
     /* MOBILE */
-
-    @media (max-width: 800px) {
-
-      .home-container {
-        width: min(100% - 34px, 700px);
-      }
+    @media(max-width:800px){
 
       .home-hero {
-        padding: 80px 0 65px;
+        grid-template-columns:1fr;
+        min-height:auto;
       }
 
-      .home-hero-grid,
-      .home-story-grid {
-        grid-template-columns: 1fr;
-        gap: 45px;
+      .home-hero-copy {
+        padding:70px 7%;
       }
 
       .home-hero h1 {
-        font-size: clamp(58px, 15vw, 90px);
+        font-size:clamp(46px,13vw,64px);
       }
 
       .home-hero-image {
-        height: 350px;
-        margin-top: 35px;
+        min-height:430px;
       }
 
-      .home-story,
-      .home-journey,
-      .home-framework,
-      .home-philosophy {
-        padding: 75px 0;
+      .home-story {
+        padding:70px 0;
+      }
+
+      .home-story-grid {
+        grid-template-columns:1fr;
+        gap:35px;
       }
 
       .home-story-image {
-        height: 300px;
-        margin-top: 30px;
+        height:380px;
+        order:2;
+      }
+
+      .home-journey,
+      .home-framework,
+      .home-philosophy {
+        padding:70px 0;
       }
 
       .journey-item {
-        grid-template-columns: 45px 1fr;
-        gap: 15px;
+        grid-template-columns:40px 1fr;
+        gap:15px;
       }
 
-      .journey-text {
-        grid-column: 2;
+      .journey-item p {
+        grid-column:2;
       }
 
-      .framework-row {
-        grid-template-columns: 45px 1fr;
-        gap: 15px;
+      .home-framework-head {
+        display:block;
+        margin-bottom:40px;
       }
 
-      .framework-row-text {
-        grid-column: 2;
+      .home-framework-head p {
+        margin-top:20px;
+      }
+
+      .framework-grid {
+        grid-template-columns:1fr;
+      }
+
+      .framework-item,
+      .framework-item + .framework-item {
+        padding:25px 0;
+        border-left:0;
       }
 
       .home-visual {
-        height: 340px;
-      }
-
-      .home-visual-text {
-        left: 17px;
-        right: 17px;
-        bottom: 30px;
+        min-height:350px;
       }
 
       .home-cta {
-        padding: 90px 0;
+        padding:70px 0;
       }
 
+      .home-cta-inner {
+        display:block;
+      }
+
+      .home-cta .btn {
+        margin-top:25px;
+      }
     }
-
   </style>
-
-
-  <!-- ORGANIZATION -->
-
-  <script type="application/ld+json">
-
-  {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "BrandiVa Digital",
-    "url": "https://brandivadigital.com/",
-    "email": "hello@brandivadigital.com",
-    "telephone": "+919102255770",
-    "address": {
-      "@type": "PostalAddress",
-      "addressLocality": "Kolhapur",
-      "addressRegion": "Maharashtra",
-      "addressCountry": "IN"
-    },
-    "sameAs": [
-      "https://www.instagram.com/brandiva_digtal/"
-    ]
-  }
-
-  </script>
-
 </head>
 
+<body class="home">
 
-<body>
+<script src="header.js"></script>
 
-  <div id="header"></div>
+<main>
+
+  <!-- HERO -->
+  <section class="home-hero">
+
+    <div class="home-hero-copy">
+
+      <div class="home-label">
+        Digital Partner for Schools
+      </div>
+
+      <h1>
+        Every school has a story.
+      </h1>
+
+      <p>
+        We help schools turn what makes them special into a digital presence
+        that people can discover, understand and remember.
+      </p>
+
+      <div>
+        <a href="schools.html" class="btn">For Schools →</a>
+      </div>
+
+    </div>
+
+    <div class="home-hero-image"></div>
+
+  </section>
 
 
-  <main class="home-page">
+  <!-- STORY -->
+  <section class="home-story">
 
+    <div class="container home-story-grid">
 
-    <!-- HERO -->
+      <div class="home-story-image"></div>
 
-    <section class="home-hero">
+      <div class="home-story-copy">
 
-      <div class="home-container">
-
-        <div class="home-hero-grid">
-
-          <div>
-
-            <div class="home-label">
-              Digital Partner for Schools
-            </div>
-
-            <h1>
-              Every school
-              <span>has a story.</span>
-            </h1>
-
-          </div>
-
-
-          <div class="home-hero-copy">
-
-            <p>
-              Before parents walk through your gates,
-              they often walk through your digital presence.
-            </p>
-
-            <a class="home-link" href="schools.html">
-              See how we help schools →
-            </a>
-
-          </div>
-
+        <div class="home-label">
+          The Story
         </div>
 
+        <h2>
+          The story already exists.
+        </h2>
 
-        <div class="home-hero-image"></div>
+        <p>
+          Every school already has its people, its culture, its achievements,
+          its classrooms and the trust it has built over time.
+        </p>
+
+        <p>
+          The challenge is making that story visible in a digital world
+          where parents often meet a school online before they ever walk
+          through its gates.
+        </p>
 
       </div>
 
-    </section>
+    </div>
+
+  </section>
 
 
-    <!-- STORY -->
+  <!-- PARENT JOURNEY -->
+  <section class="home-journey">
 
-    <section class="home-story">
+    <div class="container">
 
-      <div class="home-container">
-
-        <div class="home-story-grid">
-
-          <div>
-
-            <div class="home-label">
-              The Reality
-            </div>
-
-            <h2>
-              The story already exists.
-            </h2>
-
-          </div>
-
-
-          <div class="home-story-copy">
-
-            <p>
-              Years of teaching. Teachers who care.
-              Students who grow. Achievements worth celebrating.
-              A reputation built over time.
-            </p>
-
-            <p>
-              But when a parent searches for your school,
-              how much of that can they actually see?
-            </p>
-
-          </div>
-
-        </div>
-
-
-        <div class="home-story-image"></div>
-
-      </div>
-
-    </section>
-
-
-    <!-- PARENT JOURNEY -->
-
-    <section class="home-journey">
-
-      <div class="home-container">
+      <div class="home-journey-intro">
 
         <div class="home-label">
           The Parent Journey
         </div>
 
         <h2>
-          From hearing your name
-          to choosing your school.
-        </h2>
-
-
-        <div class="journey-list">
-
-          <div class="journey-item">
-            <div class="journey-number">01</div>
-            <div class="journey-title">Hear</div>
-            <div class="journey-text">
-              Someone mentions your school.
-            </div>
-          </div>
-
-          <div class="journey-item">
-            <div class="journey-number">02</div>
-            <div class="journey-title">Search</div>
-            <div class="journey-text">
-              They look for you online.
-            </div>
-          </div>
-
-          <div class="journey-item">
-            <div class="journey-number">03</div>
-            <div class="journey-title">Compare</div>
-            <div class="journey-text">
-              They compare schools, information and impressions.
-            </div>
-          </div>
-
-          <div class="journey-item">
-            <div class="journey-number">04</div>
-            <div class="journey-title">Explore</div>
-            <div class="journey-text">
-              They visit your website, social pages and photographs.
-            </div>
-          </div>
-
-          <div class="journey-item">
-            <div class="journey-number">05</div>
-            <div class="journey-title">Choose</div>
-            <div class="journey-text">
-              Trust becomes an enquiry.
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-
-    </section>
-
-
-    <!-- FRAMEWORK -->
-
-    <section class="home-framework">
-
-      <div class="home-container">
-
-        <div class="home-label">
-          The BrandiVa Method
-        </div>
-
-        <h2>
-          Be Seen.
-          Be Remembered.
-          Be Chosen.
-        </h2>
-
-
-        <div class="framework-list">
-
-          <div class="framework-row">
-
-            <div class="framework-row-number">
-              01
-            </div>
-
-            <div class="framework-row-title">
-              Be Seen
-            </div>
-
-            <div class="framework-row-text">
-              Build the digital foundation that helps parents
-              discover your school and understand what it offers.
-            </div>
-
-          </div>
-
-
-          <div class="framework-row">
-
-            <div class="framework-row-number">
-              02
-            </div>
-
-            <div class="framework-row-title">
-              Be Remembered
-            </div>
-
-            <div class="framework-row-text">
-              Turn your school's identity, people, achievements
-              and stories into communication people can connect with.
-            </div>
-
-          </div>
-
-
-          <div class="framework-row">
-
-            <div class="framework-row-number">
-              03
-            </div>
-
-            <div class="framework-row-title">
-              Be Chosen
-            </div>
-
-            <div class="framework-row-text">
-              Create the marketing and conversion systems
-              that turn attention into meaningful enquiries.
-            </div>
-
-          </div>
-
-        </div>
-
-      </div>
-
-    </section>
-
-
-    <!-- VISUAL BREAK -->
-
-    <section class="home-visual">
-
-      <div class="home-visual-text">
-        Your digital presence should reflect the school you have built.
-      </div>
-
-    </section>
-
-
-    <!-- PHILOSOPHY -->
-
-    <section class="home-philosophy">
-
-      <div class="home-container">
-
-        <div class="home-philosophy-inner">
-
-          <div class="home-label">
-            Our Philosophy
-          </div>
-
-          <h2>
-            We don't invent the story.
-            We discover it.
-          </h2>
-
-          <p>
-            BrandiVa starts by understanding the institution —
-            its vision, people, culture, achievements and ambitions.
-          </p>
-
-          <p>
-            Then we translate that reality into a digital presence
-            that is clearer, more memorable and easier to trust.
-          </p>
-
-        </div>
-
-      </div>
-
-    </section>
-
-
-    <!-- CTA -->
-
-    <section class="home-cta">
-
-      <div class="home-container">
-
-        <div class="home-label">
-          Your School Has A Story
-        </div>
-
-        <h2>
-          Let's make sure
-          it's seen.
+          Before a visit, there is a search.
         </h2>
 
         <p>
-          Tell us where your school is today.
-          We'll help you think about what comes next.
+          A parent may discover a school through Google, social media,
+          a recommendation or an advertisement. Every one of those
+          moments shapes the decision that comes next.
         </p>
-
-        <a href="contact.html">
-          Start a Conversation →
-        </a>
 
       </div>
 
-    </section>
+      <div class="journey-list">
+
+        <div class="journey-item">
+          <div class="journey-number">01</div>
+          <h3>Discover</h3>
+          <p>
+            Can parents find the school when they begin looking?
+          </p>
+        </div>
+
+        <div class="journey-item">
+          <div class="journey-number">02</div>
+          <h3>Explore</h3>
+          <p>
+            Does the digital experience show them what the school is really like?
+          </p>
+        </div>
+
+        <div class="journey-item">
+          <div class="journey-number">03</div>
+          <h3>Trust</h3>
+          <p>
+            Does the story, communication and presence make the school feel credible?
+          </p>
+        </div>
+
+        <div class="journey-item">
+          <div class="journey-number">04</div>
+          <h3>Choose</h3>
+          <p>
+            Is it easy for an interested parent to take the next step?
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
 
 
-  </main>
+  <!-- FRAMEWORK -->
+  <section class="home-framework">
+
+    <div class="container">
+
+      <div class="home-framework-head">
+
+        <div>
+          <div class="home-label">
+            Our Approach
+          </div>
+
+          <h2>
+            Be seen. Be remembered. Be chosen.
+          </h2>
+        </div>
+
+        <p>
+          Three stages that connect visibility, storytelling and growth.
+        </p>
+
+      </div>
 
 
-  <script src="header.js"></script>
-  <script src="footer.js"></script>
+      <div class="framework-grid">
+
+        <div class="framework-item">
+
+          <span>01 · BE SEEN</span>
+
+          <h3>Visibility</h3>
+
+          <p>
+            Websites, search, social presence and the digital foundations
+            that help people find you.
+          </p>
+
+        </div>
+
+
+        <div class="framework-item">
+
+          <span>02 · BE REMEMBERED</span>
+
+          <h3>Story</h3>
+
+          <p>
+            Content, identity and communication that make the school
+            feel distinct and worth remembering.
+          </p>
+
+        </div>
+
+
+        <div class="framework-item">
+
+          <span>03 · BE CHOSEN</span>
+
+          <h3>Growth</h3>
+
+          <p>
+            Campaigns, advertising and conversion systems that turn
+            attention into meaningful enquiries.
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- VISUAL -->
+  <section class="home-visual"></section>
+
+
+  <!-- PHILOSOPHY -->
+  <section class="home-philosophy">
+
+    <div class="container">
+
+      <div class="home-philosophy-inner">
+
+        <div class="home-label">
+          Our Philosophy
+        </div>
+
+        <blockquote>
+          A school should not have to become louder to be noticed.
+          It should become clearer.
+        </blockquote>
+
+        <p>
+          BrandiVa exists to help schools communicate what is already
+          valuable about them — with clarity, consistency and purpose.
+        </p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- CTA -->
+  <section class="home-cta">
+
+    <div class="container home-cta-inner">
+
+      <div>
+
+        <div class="home-label">
+          Start the conversation
+        </div>
+
+        <h2>
+          Your school's story deserves to be seen.
+        </h2>
+
+        <p>
+          Let's explore how BrandiVa can help turn that story into digital growth.
+        </p>
+
+      </div>
+
+      <div>
+        <a href="contact.html" class="btn light">
+          Let's Talk →
+        </a>
+      </div>
+
+    </div>
+
+  </section>
+
+</main>
+
+<script src="footer.js"></script>
 
 </body>
-
 </html>
