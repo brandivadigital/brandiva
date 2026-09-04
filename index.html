@@ -1,748 +1,1127 @@
 <!doctype html>
 <html lang="en">
-
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-
-<title>BrandiVa Digital | Digital Partner for Schools</title>
-
-<meta name="description" content="BrandiVa helps schools build a thoughtful digital presence through websites, storytelling, content and digital growth.">
-
-<link rel="canonical" href="https://brandivadigital.com/">
-<link rel="stylesheet" href="style.css">
-
-<style>
-
-/* =================================
-   BRANDIVA — STORY HOMEPAGE
-   ================================= */
-
-.story-home{
-  background:#fffdfa;
-  color:#173042;
-}
-
-.story-home .container{
-  width:min(1120px,90%);
-  margin:auto;
-}
-
-/* ---------- SMALL LABEL ---------- */
-
-.story-label{
-  font-size:10px;
-  letter-spacing:2px;
-  text-transform:uppercase;
-  font-weight:700;
-  color:#b69057;
-  margin-bottom:12px;
-}
-
-/* ---------- HERO ---------- */
-
-.story-hero{
-  background:#f7f5ef;
-  padding:55px 0 65px;
-}
-
-.story-hero-grid{
-  display:grid;
-  grid-template-columns:.85fr 1.15fr;
-  gap:55px;
-  align-items:center;
-}
-
-.story-hero-copy h1{
-  font-family:'Playfair Display',serif;
-  font-size:clamp(48px,5.5vw,70px);
-  line-height:1.03;
-  letter-spacing:-1.8px;
-  font-weight:500;
-  margin:0 0 20px;
-  max-width:540px;
-}
-
-.story-hero-copy p{
-  color:#60707a;
-  font-size:16px;
-  line-height:1.7;
-  max-width:460px;
-  margin:0 0 25px;
-}
-
-.story-hero-image{
-  height:440px;
-  background:url('hero section.jpg') center/cover no-repeat;
-}
-
-/* ---------- CHAPTERS ---------- */
-
-.story-chapter{
-  padding:70px 0;
-}
-
-.story-chapter.alt{
-  background:#edf4f3;
-}
-
-.chapter-grid{
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:65px;
-  align-items:center;
-}
-
-.chapter-image{
-  height:390px;
-  background:center/cover no-repeat;
-}
-
-.chapter-copy{
-  max-width:530px;
-}
-
-.chapter-copy h2{
-  font-family:'Playfair Display',serif;
-  font-size:clamp(30px,3.5vw,43px);
-  line-height:1.13;
-  letter-spacing:-.7px;
-  font-weight:500;
-  margin:0 0 18px;
-}
-
-.chapter-copy p{
-  color:#60707a;
-  font-size:16px;
-  line-height:1.7;
-  margin:0 0 13px;
-}
-
-/* ---------- CHAPTER THREE ---------- */
-
-.story-gap{
-  padding:65px 0;
-  border-top:1px solid #dfe5e3;
-  border-bottom:1px solid #dfe5e3;
-}
-
-.story-gap-grid{
-  display:grid;
-  grid-template-columns:.8fr 1.2fr;
-  gap:70px;
-  align-items:center;
-}
-
-.story-gap h2{
-  font-family:'Playfair Display',serif;
-  font-size:clamp(30px,3.4vw,42px);
-  line-height:1.15;
-  font-weight:500;
-  letter-spacing:-.6px;
-  margin:0;
-}
-
-.story-gap p{
-  color:#60707a;
-  font-size:16px;
-  line-height:1.7;
-  margin:0 0 14px;
-}
-
-/* ---------- CHAPTER FOUR ---------- */
-
-.story-approach{
-  padding:70px 0;
-  background:#f7f5ef;
-}
-
-.story-approach-head{
-  max-width:620px;
-  margin-bottom:35px;
-}
-
-.story-approach h2{
-  font-family:'Playfair Display',serif;
-  font-size:clamp(30px,3.4vw,43px);
-  line-height:1.15;
-  font-weight:500;
-  letter-spacing:-.6px;
-  margin:0 0 15px;
-}
-
-.story-approach-intro{
-  color:#60707a;
-  font-size:16px;
-  line-height:1.7;
-  margin:0;
-}
-
-.story-pillars{
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  border-top:1px solid #dfe5e3;
-}
-
-.story-pillar{
-  padding:23px 25px 5px 0;
-}
-
-.story-pillar + .story-pillar{
-  padding-left:25px;
-  border-left:1px solid #dfe5e3;
-}
-
-.story-pillar span{
-  display:block;
-  font-size:10px;
-  letter-spacing:1.5px;
-  color:#b69057;
-  font-weight:700;
-  margin-bottom:10px;
-}
-
-.story-pillar h3{
-  font-size:20px;
-  margin:0 0 7px;
-  font-weight:600;
-}
-
-.story-pillar p{
-  color:#60707a;
-  font-size:14px;
-  line-height:1.6;
-  margin:0;
-}
-
-/* ---------- CHAPTER FIVE ---------- */
-
-.story-next{
-  padding:75px 0 80px;
-  background:#fffdfa;
-}
-
-.story-next-inner{
-  max-width:820px;
-}
-
-.story-next h2{
-  font-family:'Playfair Display',serif;
-  font-size:clamp(31px,3.6vw,46px);
-  line-height:1.17;
-  font-weight:500;
-  letter-spacing:-.7px;
-  margin:0 0 17px;
-}
-
-.story-next p{
-  color:#60707a;
-  font-size:16px;
-  line-height:1.7;
-  max-width:590px;
-  margin:0 0 25px;
-}
-
-/* ---------- MOBILE ---------- */
-
-@media(max-width:800px){
-
-  .story-hero{
-    padding:50px 0 55px;
-  }
-
-  .story-hero-grid{
-    grid-template-columns:1fr;
-    gap:35px;
-  }
-
-  .story-hero-copy h1{
-    font-size:clamp(44px,12vw,58px);
-  }
-
-  .story-hero-image{
-    height:330px;
-  }
-
-  .story-chapter{
-    padding:60px 0;
-  }
-
-  .chapter-grid{
-    grid-template-columns:1fr;
-    gap:30px;
-  }
-
-  .chapter-image{
-    height:320px;
-  }
-
-  .chapter-copy{
-    max-width:none;
-  }
-
-  .chapter-grid.reverse .chapter-image{
-    order:2;
-  }
-
-  .story-gap{
-    padding:55px 0;
-  }
-
-  .story-gap-grid{
-    grid-template-columns:1fr;
-    gap:25px;
-  }
-
-  .story-approach{
-    padding:60px 0;
-  }
-
-  .story-pillars{
-    grid-template-columns:1fr;
-  }
-
-  .story-pillar,
-  .story-pillar + .story-pillar{
-    padding:20px 0;
-    border-left:0;
-    border-bottom:1px solid #dfe5e3;
-  }
-
-  .story-next{
-    padding:60px 0 65px;
-  }
-
-}
-
-/* ==============================
-   FINAL SPACING & BALANCE TUNING
-   ============================== */
-
-/* Hero — slightly tighter */
-.story-hero{
-  padding:42px 0 50px;
-}
-
-.story-hero-grid{
-  gap:48px;
-}
-
-.story-hero-image{
-  height:400px;
-}
-
-/* Chapters — less empty space */
-.story-chapter{
-  padding:55px 0;
-}
-
-.chapter-grid{
-  gap:55px;
-}
-
-.chapter-image{
-  height:350px;
-}
-
-/* Chapter Three — compact */
-.story-gap{
-  padding:50px 0;
-}
-
-.story-gap-grid{
-  gap:55px;
-}
-
-/* Chapter Four — tighter and more substantial */
-.story-approach{
-  padding:55px 0;
-}
-
-.story-approach-head{
-  margin-bottom:28px;
-}
-
-.story-pillars{
-  margin-top:5px;
-}
-
-.story-pillar{
-  padding:20px 25px 2px 0;
-}
-
-.story-pillar + .story-pillar{
-  padding-left:25px;
-}
-
-/* Final chapter — don't let it become another huge section */
-.story-next{
-  padding:55px 0 60px;
-}
-
-
-/* ---------- MOBILE ---------- */
-
-@media(max-width:800px){
-
-  .story-hero{
-    padding:42px 0 48px;
-  }
-
-  .story-hero-grid{
-    gap:28px;
-  }
-
-  .story-hero-image{
-    height:300px;
-  }
-
-  .story-chapter{
-    padding:48px 0;
-  }
-
-  .chapter-grid{
-    gap:26px;
-  }
-
-  .chapter-image{
-    height:300px;
-  }
-
-  .story-gap{
-    padding:45px 0;
-  }
-
-  .story-gap-grid{
-    gap:22px;
-  }
-
-  .story-approach{
-    padding:48px 0;
-  }
-
-  .story-approach-head{
-    margin-bottom:25px;
-  }
-
-  .story-next{
-    padding:50px 0 55px;
-  }
-
-}/* ==============================
-   DESKTOP WIDTH BALANCE
-   ============================== */
-
-@media(min-width:801px){
-
-  .story-home .container{
-    width:min(1280px,94%);
-  }
-
-  .story-hero-grid{
-    grid-template-columns:0.9fr 1.1fr;
-    gap:65px;
-  }
-
-  .story-hero-image{
-    height:440px;
-  }
-
-  .chapter-grid{
-    grid-template-columns:0.95fr 1.05fr;
-    gap:70px;
-  }
-
-  .chapter-image{
-    height:390px;
-  }
-
-  .story-gap-grid{
-    grid-template-columns:0.9fr 1.1fr;
-    gap:80px;
-  }
-
-  .story-approach-head{
-    max-width:760px;
-  }
-
-}</style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+
+  <title>BrandiVa Digital | Digital Partner for Schools</title>
+
+  <meta name="description" content="BrandiVa helps schools and educational institutions build thoughtful websites, stronger digital identities and meaningful online presence.">
+
+  <link rel="canonical" href="https://brandivadigital.com/">
+
+  <meta property="og:title" content="BrandiVa Digital | Digital Partner for Schools">
+  <meta property="og:description" content="Every school has a story. BrandiVa helps schools bring that story to life digitally.">
+  <meta property="og:url" content="https://brandivadigital.com/">
+  <meta property="og:type" content="website">
+
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    /* =========================
+       BRANDIVA STORY HOMEPAGE
+       ========================= */
+
+    .story-home{
+      overflow:hidden;
+      background:#fffdfa;
+    }
+
+    .story-home .container{
+      width:min(1200px,92%);
+    }
+
+    /* HERO */
+
+    .story-hero{
+      background:#f7f5ef;
+      padding:42px 0 70px;
+    }
+
+    .story-hero-grid{
+      display:grid;
+      grid-template-columns:.9fr 1.1fr;
+      align-items:center;
+      gap:70px;
+      min-height:620px;
+    }
+
+    .story-hero-copy{
+      padding:20px 0;
+    }
+
+    .story-label,
+    .story-kicker{
+      font-size:12px;
+      text-transform:uppercase;
+      letter-spacing:2.4px;
+      font-weight:700;
+      color:#b69057;
+    }
+
+    .story-hero h1{
+      font-family:'Playfair Display',serif;
+      font-size:clamp(52px,6vw,82px);
+      line-height:1.03;
+      letter-spacing:-2px;
+      margin:18px 0 24px;
+      max-width:650px;
+    }
+
+    .story-hero-copy p{
+      font-size:18px;
+      line-height:1.75;
+      color:#60707a;
+      max-width:560px;
+      margin:0;
+    }
+
+    .story-hero-visual{
+      position:relative;
+      padding:0 0 35px 35px;
+    }
+
+    .story-hero-image{
+      width:100%;
+      height:530px;
+      object-fit:cover;
+      display:block;
+      border-radius:2px;
+    }
+
+    .story-hero-note{
+      position:absolute;
+      left:0;
+      bottom:0;
+      width:230px;
+      padding:19px 21px;
+      background:#fffdfa;
+      border-left:3px solid #b69057;
+      box-shadow:0 12px 35px rgba(17,36,47,.10);
+      font-size:13px;
+      line-height:1.5;
+      color:#60707a;
+    }
+
+    .story-scroll{
+      margin-top:38px;
+      font-size:12px;
+      text-transform:uppercase;
+      letter-spacing:1.7px;
+      color:#60707a;
+    }
+
+    /* CHAPTER ONE */
+
+    .story-chapter{
+      padding:105px 0;
+      background:#fffdfa;
+    }
+
+    .chapter-one-grid{
+      display:grid;
+      grid-template-columns:1.05fr .95fr;
+      gap:85px;
+      align-items:center;
+    }
+
+    .chapter-copy{
+      position:relative;
+    }
+
+    .chapter-number{
+      font-family:'Playfair Display',serif;
+      font-size:90px;
+      line-height:.8;
+      color:#edf0ec;
+      position:absolute;
+      left:-8px;
+      top:-28px;
+      z-index:0;
+    }
+
+    .chapter-copy-inner{
+      position:relative;
+      z-index:1;
+    }
+
+    .chapter-copy h2{
+      font-family:'Playfair Display',serif;
+      font-size:clamp(38px,4vw,58px);
+      line-height:1.08;
+      letter-spacing:-1.2px;
+      margin:16px 0 22px;
+      max-width:650px;
+    }
+
+    .chapter-copy .lead{
+      font-size:19px;
+      color:#60707a;
+      max-width:610px;
+      line-height:1.75;
+    }
+
+    .chapter-copy p:not(.lead){
+      color:#60707a;
+      max-width:570px;
+    }
+
+    .chapter-visual{
+      position:relative;
+      padding:25px 0 0 25px;
+    }
+
+    .chapter-visual img{
+      width:100%;
+      height:455px;
+      object-fit:cover;
+      display:block;
+    }
+
+    .image-caption{
+      position:absolute;
+      left:0;
+      bottom:-20px;
+      background:#173042;
+      color:#fff;
+      padding:13px 18px;
+      font-size:12px;
+      letter-spacing:.4px;
+    }
+
+    /* CHAPTER TWO */
+
+    .chapter-two{
+      background:#e8f1f2;
+      padding:105px 0;
+    }
+
+    .chapter-two-grid{
+      display:grid;
+      grid-template-columns:.9fr 1.1fr;
+      gap:75px;
+      align-items:center;
+    }
+
+    .chapter-two-visual{
+      position:relative;
+    }
+
+    .chapter-two-visual img{
+      width:100%;
+      height:500px;
+      object-fit:cover;
+      display:block;
+    }
+
+    .chapter-two-visual:after{
+      content:"";
+      position:absolute;
+      width:90px;
+      height:90px;
+      border:1px solid #b69057;
+      right:-25px;
+      bottom:-25px;
+      z-index:0;
+    }
+
+    .chapter-two-visual img{
+      position:relative;
+      z-index:1;
+    }
+
+    .chapter-two-copy{
+      padding-left:20px;
+    }
+
+    .chapter-two-copy h2{
+      font-family:'Playfair Display',serif;
+      font-size:clamp(38px,4vw,58px);
+      line-height:1.08;
+      letter-spacing:-1.2px;
+      margin:16px 0 24px;
+    }
+
+    .chapter-two-copy p{
+      color:#60707a;
+      font-size:17px;
+      line-height:1.75;
+      max-width:590px;
+    }
+
+    .quiet-line{
+      width:70px;
+      height:1px;
+      background:#b69057;
+      margin:30px 0;
+    }
+
+    /* CHAPTER THREE */
+
+    .story-gap{
+      padding:105px 0;
+      background:#fffdfa;
+    }
+
+    .story-gap-head{
+      display:grid;
+      grid-template-columns:.75fr 1.25fr;
+      gap:70px;
+      align-items:end;
+      margin-bottom:65px;
+    }
+
+    .story-gap-head h2{
+      font-family:'Playfair Display',serif;
+      font-size:clamp(40px,4.5vw,64px);
+      line-height:1.06;
+      letter-spacing:-1.5px;
+      margin:0;
+    }
+
+    .story-gap-intro{
+      color:#60707a;
+      font-size:17px;
+      max-width:530px;
+      margin:0;
+    }
+
+    .gap-comparison{
+      display:grid;
+      grid-template-columns:1fr 90px 1fr;
+      align-items:stretch;
+      border-top:1px solid #dfe5e3;
+      border-bottom:1px solid #dfe5e3;
+    }
+
+    .gap-side{
+      padding:42px 38px;
+    }
+
+    .gap-side h3{
+      font-family:'Playfair Display',serif;
+      font-size:28px;
+      margin:0 0 25px;
+    }
+
+    .gap-side ul{
+      margin:0;
+      padding:0;
+      list-style:none;
+    }
+
+    .gap-side li{
+      padding:12px 0;
+      border-bottom:1px solid #e7ebe9;
+      color:#60707a;
+    }
+
+    .gap-vs{
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      border-left:1px solid #dfe5e3;
+      border-right:1px solid #dfe5e3;
+      font-family:'Playfair Display',serif;
+      font-size:22px;
+      color:#b69057;
+    }
+
+    .gap-statement{
+      margin-top:55px;
+      padding:38px 45px;
+      background:#173042;
+      color:#fff;
+      text-align:center;
+    }
+
+    .gap-statement p{
+      font-family:'Playfair Display',serif;
+      font-size:clamp(24px,3vw,38px);
+      line-height:1.3;
+      max-width:850px;
+      margin:0 auto;
+    }
+
+    .gap-statement strong{
+      color:#ead5ad;
+      font-weight:500;
+    }
+
+    /* CHAPTER FOUR */
+
+    .story-turn{
+      background:#f7f5ef;
+      padding:105px 0 115px;
+    }
+
+    .turn-head{
+      display:flex;
+      justify-content:space-between;
+      align-items:flex-end;
+      gap:40px;
+      margin-bottom:55px;
+    }
+
+    .turn-head h2{
+      font-family:'Playfair Display',serif;
+      font-size:clamp(42px,4.8vw,68px);
+      line-height:1.04;
+      letter-spacing:-1.5px;
+      margin:15px 0 0;
+      max-width:730px;
+    }
+
+    .turn-head p{
+      max-width:340px;
+      color:#60707a;
+      margin:0;
+    }
+
+    .turn-feature{
+      display:grid;
+      grid-template-columns:.82fr 1.18fr;
+      gap:55px;
+      align-items:center;
+    }
+
+    .turn-copy h3{
+      font-family:'Playfair Display',serif;
+      font-size:34px;
+      line-height:1.2;
+      margin:0 0 20px;
+    }
+
+    .turn-copy > p{
+      color:#60707a;
+      font-size:17px;
+      line-height:1.75;
+      max-width:500px;
+    }
+
+    .turn-image-wrap{
+      position:relative;
+      padding:0 0 28px 28px;
+    }
+
+    .turn-image-wrap img{
+      width:100%;
+      height:480px;
+      object-fit:cover;
+      display:block;
+    }
+
+    .turn-caption{
+      position:absolute;
+      left:0;
+      bottom:0;
+      width:270px;
+      background:rgba(255,253,250,.94);
+      padding:15px 18px;
+      font-size:12px;
+      line-height:1.5;
+      color:#60707a;
+      border-left:3px solid #b69057;
+    }
+
+    .turn-pillars{
+      margin-top:65px;
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      border-top:1px solid #dfe5e3;
+    }
+
+    .turn-pillar{
+      padding:30px 30px 10px 0;
+    }
+
+    .turn-pillar + .turn-pillar{
+      padding-left:30px;
+      border-left:1px solid #dfe5e3;
+    }
+
+    .turn-pillar span{
+      font-size:11px;
+      text-transform:uppercase;
+      letter-spacing:1.8px;
+      color:#b69057;
+      font-weight:700;
+    }
+
+    .turn-pillar h4{
+      font-family:'Playfair Display',serif;
+      font-size:27px;
+      margin:12px 0 8px;
+    }
+
+    .turn-pillar p{
+      color:#60707a;
+      margin:0;
+      font-size:14px;
+    }
+
+    /* CHAPTER FIVE */
+
+    .story-next{
+      background:#173042;
+      color:#fff;
+      padding:105px 0 0;
+    }
+
+    .next-grid{
+      display:grid;
+      grid-template-columns:.82fr 1.18fr;
+      gap:70px;
+      align-items:center;
+      padding-bottom:80px;
+    }
+
+    .next-copy h2{
+      font-family:'Playfair Display',serif;
+      font-size:clamp(42px,5vw,70px);
+      line-height:1.05;
+      letter-spacing:-1.5px;
+      margin:15px 0 24px;
+    }
+
+    .next-copy p{
+      color:#b9c8c9;
+      font-size:17px;
+      line-height:1.75;
+      max-width:520px;
+    }
+
+    .next-copy .btn{
+      margin-top:18px;
+    }
+
+    .next-visual{
+      position:relative;
+    }
+
+    .next-visual img{
+      width:100%;
+      height:430px;
+      object-fit:cover;
+      display:block;
+    }
+
+    .next-caption{
+      position:absolute;
+      left:20px;
+      bottom:20px;
+      padding:10px 15px;
+      background:rgba(17,36,47,.76);
+      color:#e9eeee;
+      font-size:12px;
+    }
+
+    .next-footer-line{
+      border-top:1px solid rgba(255,255,255,.14);
+      padding:25px 0 28px;
+      color:#8fa3a6;
+      font-size:12px;
+      text-transform:uppercase;
+      letter-spacing:1.5px;
+    }
+
+    /* RESPONSIVE */
+
+    @media(max-width:900px){
+
+      .story-hero{
+        padding:30px 0 55px;
+      }
+
+      .story-hero-grid,
+      .chapter-one-grid,
+      .chapter-two-grid,
+      .turn-feature,
+      .next-grid{
+        grid-template-columns:1fr;
+        gap:45px;
+      }
+
+      .story-hero-grid{
+        min-height:auto;
+      }
+
+      .story-hero h1{
+        font-size:clamp(48px,11vw,70px);
+      }
+
+      .story-hero-image{
+        height:420px;
+      }
+
+      .chapter-visual img,
+      .chapter-two-visual img{
+        height:420px;
+      }
+
+      .story-gap-head{
+        grid-template-columns:1fr;
+        gap:25px;
+      }
+
+      .turn-head{
+        display:block;
+      }
+
+      .turn-head p{
+        margin-top:25px;
+      }
+
+      .next-visual img{
+        height:390px;
+      }
+    }
+
+    @media(max-width:650px){
+
+      .story-home .container{
+        width:90%;
+      }
+
+      .story-hero{
+        padding-top:20px;
+      }
+
+      .story-hero-grid{
+        gap:35px;
+      }
+
+      .story-hero h1{
+        font-size:50px;
+        letter-spacing:-1.5px;
+      }
+
+      .story-hero-copy p{
+        font-size:16px;
+      }
+
+      .story-hero-visual{
+        padding:0 0 30px 15px;
+      }
+
+      .story-hero-image{
+        height:350px;
+      }
+
+      .story-hero-note{
+        width:205px;
+        font-size:11px;
+        padding:14px 15px;
+      }
+
+      .story-chapter,
+      .chapter-two,
+      .story-gap,
+      .story-turn{
+        padding:75px 0;
+      }
+
+      .chapter-copy h2,
+      .chapter-two-copy h2{
+        font-size:39px;
+      }
+
+      .chapter-number{
+        font-size:70px;
+        top:-18px;
+      }
+
+      .chapter-visual{
+        padding:15px 0 25px 12px;
+      }
+
+      .chapter-visual img,
+      .chapter-two-visual img{
+        height:350px;
+      }
+
+      .image-caption{
+        bottom:0;
+        font-size:11px;
+      }
+
+      .chapter-two-copy{
+        padding-left:0;
+      }
+
+      .chapter-two-visual:after{
+        width:65px;
+        height:65px;
+        right:-12px;
+        bottom:-12px;
+      }
+
+      .gap-comparison{
+        grid-template-columns:1fr;
+      }
+
+      .gap-vs{
+        border-top:1px solid #dfe5e3;
+        border-bottom:1px solid #dfe5e3;
+        border-left:0;
+        border-right:0;
+        padding:14px;
+      }
+
+      .gap-side{
+        padding:30px 20px;
+      }
+
+      .gap-statement{
+        padding:30px 20px;
+      }
+
+      .turn-head h2{
+        font-size:42px;
+      }
+
+      .turn-image-wrap{
+        padding:0 0 25px 12px;
+      }
+
+      .turn-image-wrap img{
+        height:350px;
+      }
+
+      .turn-caption{
+        width:225px;
+        font-size:11px;
+      }
+
+      .turn-pillars{
+        grid-template-columns:1fr;
+      }
+
+      .turn-pillar,
+      .turn-pillar + .turn-pillar{
+        padding:25px 0;
+        border-left:0;
+        border-bottom:1px solid #dfe5e3;
+      }
+
+      .story-next{
+        padding-top:75px;
+      }
+
+      .next-grid{
+        padding-bottom:60px;
+      }
+
+      .next-copy h2{
+        font-size:45px;
+      }
+
+      .next-visual img{
+        height:330px;
+      }
+
+      .next-caption{
+        left:10px;
+        bottom:10px;
+        font-size:11px;
+      }
+    }
+  </style>
 </head>
 
-<body class="story-home">
+<body>
 
 <script src="header.js"></script>
 
-<main>
+<main class="story-home">
 
+  <!-- =========================
+       HERO
+       ========================= -->
+  <section class="story-hero">
 
-<!-- =========================
-     THE BEGINNING
-     ========================= -->
+    <div class="container story-hero-grid">
 
-<section class="story-hero">
+      <div class="story-hero-copy">
 
-  <div class="container story-hero-grid">
+        <div class="story-label">Digital Partner for Education</div>
 
-    <div class="story-hero-copy">
-
-      <div class="story-label">
-        The Beginning
-      </div>
-
-      <h1>
-        Every school has a story.
-      </h1>
-
-      <p>
-        Inside every school, learning, ambition and trust
-        take shape every day. We help that story find its
-        place in the digital world.
-      </p>
-
-      <a class="btn" href="#chapter-one">
-        Begin the story ↓
-      </a>
-
-    </div>
-
-    <div class="story-hero-image"></div>
-
-  </div>
-
-</section>
-
-
-<!-- =========================
-     CHAPTER ONE
-     ========================= -->
-
-<section id="chapter-one" class="story-chapter">
-
-  <div class="container chapter-grid">
-
-    <div class="chapter-copy">
-
-      <div class="story-label">
-        Chapter One · The Story
-      </div>
-
-      <h2>
-        Inside the campus, the story is already happening.
-      </h2>
-
-      <p>
-        Teachers prepare. Students learn. Friendships form.
-        Achievements are earned.
-      </p>
-
-      <p>
-        Years of effort, care and trust quietly become part
-        of what makes a school different.
-      </p>
-
-    </div>
-
-    <div
-      class="chapter-image"
-      style="background-image:url('chapter 1.jpg')">
-    </div>
-
-  </div>
-
-</section>
-
-
-<!-- =========================
-     CHAPTER TWO
-     ========================= -->
-
-<section class="story-chapter alt">
-
-  <div class="container chapter-grid reverse">
-
-    <div
-      class="chapter-image"
-      style="background-image:url('chapter2.png')">
-    </div>
-
-    <div class="chapter-copy">
-
-      <div class="story-label">
-        Chapter Two · The First Impression
-      </div>
-
-      <h2>
-        But the story often begins somewhere else.
-      </h2>
-
-      <p>
-        Before parents walk through your gates, they may
-        first meet your school through Google, a website
-        or a social media post.
-      </p>
-
-      <p>
-        That first impression becomes part of the story too.
-      </p>
-
-    </div>
-
-  </div>
-
-</section>
-
-
-<!-- =========================
-     CHAPTER THREE
-     ========================= -->
-
-<section class="story-gap">
-
-  <div class="container story-gap-grid">
-
-    <div>
-
-      <div class="story-label">
-        Chapter Three · The Gap
-      </div>
-
-      <h2>
-        Sometimes, the school is better than its digital reflection.
-      </h2>
-
-    </div>
-
-    <div>
-
-      <p>
-        A great institution can still look ordinary online
-        when its website is outdated, its achievements are
-        difficult to find, or its communication lacks consistency.
-      </p>
-
-      <p>
-        The problem is not always the school.
-        Sometimes, the story simply isn't being told clearly.
-      </p>
-
-    </div>
-
-  </div>
-
-</section>
-
-
-<!-- =========================
-     CHAPTER FOUR
-     ========================= -->
-
-<section class="story-approach">
-
-  <div class="container">
-
-    <div class="story-approach-head">
-
-      <div class="story-label">
-        Chapter Four · The Digital Story
-      </div>
-
-      <h2>
-        This is where BrandiVa comes in.
-      </h2>
-
-      <p class="story-approach-intro">
-        We take what already makes your institution meaningful
-        and translate it into a digital presence built for
-        visibility, connection and growth.
-      </p>
-
-    </div>
-
-
-    <div class="story-pillars">
-
-      <div class="story-pillar">
-
-        <span>01 · BE SEEN</span>
-
-        <h3>Visibility</h3>
+        <h1>Every school has a story.</h1>
 
         <p>
-          Websites, search and digital foundations
-          that help people find you.
+          Every day, inside a school, learning, ambition and trust quietly
+          take shape. The question is — when parents look online,
+          are they seeing the real story?
         </p>
 
+        <div style="margin-top:28px">
+          <a class="btn" href="#story">Discover the story ↓</a>
+        </div>
+
+        <div class="story-scroll">
+          Scroll to begin · Chapter One
+        </div>
+
       </div>
 
+      <div class="story-hero-visual">
 
-      <div class="story-pillar">
+        <img
+          class="story-hero-image"
+          src="hero section.jpg"
+          alt="Students learning together in a school classroom">
 
-        <span>02 · BE REMEMBERED</span>
+        <div class="story-hero-note">
+          A school is more than a building.
+          It is the people, moments and memories
+          growing inside it.
+        </div>
 
-        <h3>Story</h3>
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- =========================
+       CHAPTER ONE
+       ========================= -->
+  <section id="story" class="story-chapter">
+
+    <div class="container chapter-one-grid">
+
+      <div class="chapter-copy">
+
+        <div class="chapter-number">01</div>
+
+        <div class="chapter-copy-inner">
+
+          <div class="story-kicker">Chapter One · The Story</div>
+
+          <h2>
+            Inside the campus, meaningful stories unfold every day.
+          </h2>
+
+          <p class="lead">
+            Teachers prepare. Students learn. Friendships form.
+            Achievements are earned. Parents place their trust in an
+            institution that is helping shape a future.
+          </p>
+
+          <p>
+            These moments are real. Yet many of them remain invisible
+            to the people who first discover a school through a search
+            engine or a phone screen.
+          </p>
+
+        </div>
+
+      </div>
+
+      <div class="chapter-visual">
+
+        <img
+          src="chapter 1.jpg"
+          alt="Two students working together at school">
+
+        <div class="image-caption">
+          Learning begins with people.
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- =========================
+       CHAPTER TWO
+       ========================= -->
+  <section class="chapter-two">
+
+    <div class="container chapter-two-grid">
+
+      <div class="chapter-two-visual">
+
+        <img
+          src="chapter2.png"
+          alt="Parents and child exploring a school environment">
+
+      </div>
+
+      <div class="chapter-two-copy">
+
+        <div class="story-kicker">Chapter Two · The First Impression</div>
+
+        <h2>
+          Before parents walk through your gates,
+          they often walk through your digital presence.
+        </h2>
+
+        <div class="quiet-line"></div>
 
         <p>
-          Content and identity that make your
-          school worth remembering.
+          A website, a Google search and a social media profile can become
+          a family's first introduction to your institution.
         </p>
 
-      </div>
-
-
-      <div class="story-pillar">
-
-        <span>03 · BE CHOSEN</span>
-
-        <h3>Growth</h3>
-
         <p>
-          Marketing and campaigns that turn
-          attention into meaningful enquiries.
+          That first impression quietly influences perception —
+          long before a campus visit or a conversation with your
+          admissions team.
         </p>
 
       </div>
 
     </div>
 
-  </div>
-
-</section>
+  </section>
 
 
-<!-- =========================
-     CHAPTER FIVE
-     ========================= -->
+  <!-- =========================
+       CHAPTER THREE
+       ========================= -->
+  <section class="story-gap">
 
-<section class="story-next">
+    <div class="container">
 
-  <div class="container">
+      <div class="story-gap-head">
 
-    <div class="story-next-inner">
+        <div>
+          <div class="story-kicker">Chapter Three · The Digital Reflection</div>
+        </div>
 
-      <div class="story-label">
-        Chapter Five · The Next Chapter
+        <div>
+          <h2>
+            Sometimes, reality is far better than what the internet shows.
+          </h2>
+        </div>
+
       </div>
 
-      <h2>
-        Your school already has the story.
-        It simply deserves to be seen.
-      </h2>
+      <div class="gap-comparison">
 
-      <p>
-        Let's build a digital presence that reflects
-        the institution behind it.
-      </p>
+        <div class="gap-side">
 
-      <a class="btn" href="contact.html">
-        Start a conversation →
-      </a>
+          <h3>Your school in reality</h3>
+
+          <ul>
+            <li>Dedicated teachers and leadership</li>
+            <li>Student achievements and activities</li>
+            <li>Infrastructure and learning spaces</li>
+            <li>Years of trust within the community</li>
+          </ul>
+
+        </div>
+
+        <div class="gap-vs">VS</div>
+
+        <div class="gap-side">
+
+          <h3>Your school online</h3>
+
+          <ul>
+            <li>Outdated or incomplete information</li>
+            <li>A website that does not reflect the institution</li>
+            <li>Achievements that remain unseen</li>
+            <li>Inconsistent communication</li>
+          </ul>
+
+        </div>
+
+      </div>
+
+      <div class="gap-statement">
+
+        <p>
+          A school doesn't need to become something else online.
+          <br>
+          <strong>It simply needs to be represented for what it truly is.</strong>
+        </p>
+
+      </div>
 
     </div>
 
-  </div>
+  </section>
 
-</section>
 
+  <!-- =========================
+       CHAPTER FOUR
+       ========================= -->
+  <section class="story-turn">
+
+    <div class="container">
+
+      <div class="turn-head">
+
+        <div>
+          <div class="story-kicker">Chapter Four · The Turning Point</div>
+
+          <h2>
+            The story was always there.
+            It simply needed the right way to be seen.
+          </h2>
+        </div>
+
+        <p>
+          This is where BrandiVa comes in —
+          not to change the story, but to translate it
+          into a digital presence people can understand
+          and remember.
+        </p>
+
+      </div>
+
+
+      <div class="turn-feature">
+
+        <div class="turn-copy">
+
+          <h3>
+            What happens inside the school deserves
+            to be seen outside it.
+          </h3>
+
+          <p>
+            A school already has the people, the achievements,
+            the culture and the trust. BrandiVa brings these pieces
+            together and translates them into a digital presence
+            that people can discover, understand and remember.
+          </p>
+
+          <p>
+            We begin with the institution — its character,
+            its audience and its ambitions — and build from there.
+          </p>
+
+          <a class="btn" href="services.html">
+            See what we create →
+          </a>
+
+        </div>
+
+
+        <div class="turn-image-wrap">
+
+          <img
+            src="learning section.jpg"
+            alt="Students learning together in a school classroom">
+
+          <div class="turn-caption">
+            What happens inside the school deserves
+            to be seen outside it.
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <div class="turn-pillars">
+
+        <div class="turn-pillar">
+
+          <span>01 · Be Seen</span>
+
+          <h4>Be Seen</h4>
+
+          <p>
+            Website · Search · Digital Foundation
+          </p>
+
+        </div>
+
+        <div class="turn-pillar">
+
+          <span>02 · Be Remembered</span>
+
+          <h4>Be Remembered</h4>
+
+          <p>
+            Story · Content · Identity
+          </p>
+
+        </div>
+
+        <div class="turn-pillar">
+
+          <span>03 · Be Chosen</span>
+
+          <h4>Be Chosen</h4>
+
+          <p>
+            Campaigns · Marketing · Enquiries
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- =========================
+       CHAPTER FIVE
+       ========================= -->
+  <section class="story-next">
+
+    <div class="container">
+
+      <div class="next-grid">
+
+        <div class="next-copy">
+
+          <div class="story-kicker">Chapter Five · The Next Chapter</div>
+
+          <h2>
+            Your school's next chapter is already being written.
+          </h2>
+
+          <p>
+            The classrooms are there.
+            The people are there.
+            The stories are there.
+          </p>
+
+          <p>
+            The next step is making sure the digital world
+            can see them too.
+          </p>
+
+          <a class="btn light" href="https://wa.me/919102255770" target="_blank" rel="noopener">
+            Start a conversation →
+          </a>
+
+        </div>
+
+
+        <div class="next-visual">
+
+          <img
+            src="belonging grid 2.jpg"
+            alt="Students participating together in a school activity">
+
+          <div class="next-caption">
+            Learning · Belonging · Growing together
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <div class="next-footer-line">
+        BrandiVa Digital · Thoughtful digital growth for schools
+      </div>
+
+    </div>
+
+  </section>
 
 </main>
 
