@@ -314,7 +314,121 @@
 
 }
 
-</style>
+/* ==============================
+   FINAL SPACING & BALANCE TUNING
+   ============================== */
+
+/* Hero — slightly tighter */
+.story-hero{
+  padding:42px 0 50px;
+}
+
+.story-hero-grid{
+  gap:48px;
+}
+
+.story-hero-image{
+  height:400px;
+}
+
+/* Chapters — less empty space */
+.story-chapter{
+  padding:55px 0;
+}
+
+.chapter-grid{
+  gap:55px;
+}
+
+.chapter-image{
+  height:350px;
+}
+
+/* Chapter Three — compact */
+.story-gap{
+  padding:50px 0;
+}
+
+.story-gap-grid{
+  gap:55px;
+}
+
+/* Chapter Four — tighter and more substantial */
+.story-approach{
+  padding:55px 0;
+}
+
+.story-approach-head{
+  margin-bottom:28px;
+}
+
+.story-pillars{
+  margin-top:5px;
+}
+
+.story-pillar{
+  padding:20px 25px 2px 0;
+}
+
+.story-pillar + .story-pillar{
+  padding-left:25px;
+}
+
+/* Final chapter — don't let it become another huge section */
+.story-next{
+  padding:55px 0 60px;
+}
+
+
+/* ---------- MOBILE ---------- */
+
+@media(max-width:800px){
+
+  .story-hero{
+    padding:42px 0 48px;
+  }
+
+  .story-hero-grid{
+    gap:28px;
+  }
+
+  .story-hero-image{
+    height:300px;
+  }
+
+  .story-chapter{
+    padding:48px 0;
+  }
+
+  .chapter-grid{
+    gap:26px;
+  }
+
+  .chapter-image{
+    height:300px;
+  }
+
+  .story-gap{
+    padding:45px 0;
+  }
+
+  .story-gap-grid{
+    gap:22px;
+  }
+
+  .story-approach{
+    padding:48px 0;
+  }
+
+  .story-approach-head{
+    margin-bottom:25px;
+  }
+
+  .story-next{
+    padding:50px 0 55px;
+  }
+
+}</style>
 </head>
 
 <body class="story-home">
