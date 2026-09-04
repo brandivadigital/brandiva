@@ -1,6 +1,653 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Digital Solutions for Schools | BrandiVa</title><meta name="description" content="Professional websites, social media, branding and digital visibility for schools and educational institutions."><link rel="stylesheet" href="style.css"></head><body><script src="header.js"></script><main>
-<section class="pagehero visual school-hero"><div class="container"><div class="eyebrow">For Schools & Educational Institutions</div><h1>Your institution is more than a building. Your digital presence should show that.</h1><p class="lead">BrandiVa helps schools, coaching institutes and educational organisations create a professional, trustworthy and parent-friendly presence online.</p></div></section>
-<section class="section"><div class="container story"><div><div class="kicker">The parent's perspective</div><h2>What parents look for before they enquire.</h2><p class="lead">Clarity. Trust. Information. Proof of quality. A sense of the environment their child may enter.</p><p>We help institutions organise these signals across websites, search and digital communication without making education feel like a generic product.</p></div><div class="story-img" style="background-image:url('https://images.unsplash.com/photo-1497486751825-1233686d5d80?auto=format&fit=crop&w=1200&q=90')"></div></div></section>
-<section class="visual-split"><div class="visual-image" style="background-image:url('https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=1500&q=90')"></div><div class="visual-copy"><div class="kicker">What we see</div><h2>School life is already full of stories.</h2><p class="lead">The classroom, the assembly, the achievements, the friendships and the quiet moments of growth all shape an institution's identity.</p><p>Our role is not to invent a new story. It is to help the real one travel further.</p></div></section>
-<section class="section alt"><div class="container"><div class="center"><div class="kicker">Built around education</div><h2>Digital foundations that support trust.</h2></div><div class="grid"><div class="card"><h3>Admissions</h3><p>Clear information and enquiry pathways for prospective families.</p></div><div class="card"><h3>Trust</h3><p>Professional presentation of values, infrastructure and achievements.</p></div><div class="card"><h3>Communication</h3><p>A more consistent way to share school life with your community.</p></div></div></div></section>
-<section class="section"><div class="container faq"><h2>Frequently asked questions</h2><details><summary>Can BrandiVa create a complete school website?</summary><p>Yes. We can structure and design a school-focused website around your institution's information, identity and communication needs.</p></details><details><summary>Do you work with schools outside Kolhapur?</summary><p>Yes. Digital projects can be planned and delivered remotely across India.</p></details><details><summary>Can you also manage social media?</summary><p>Yes. Social media and creative communication can be planned as part of a broader digital presence.</p></details></div></section></main><script src="footer.js"></script></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Digital Marketing for Schools | BrandiVa Digital</title>
+
+  <meta name="description" content="BrandiVa Digital helps schools build stronger digital presence through websites, branding, content, social media, SEO, Google Ads and Meta Ads. Discover how your school can be seen, remembered and chosen.">
+
+  <meta name="keywords" content="digital marketing for schools, school marketing agency, school digital presence, school website design, school branding, school SEO, school social media marketing, education marketing agency">
+
+  <meta name="author" content="BrandiVa Digital">
+  <meta name="robots" content="index, follow">
+
+  <link rel="canonical" href="https://brandivadigital.com/schools.html">
+
+  <meta property="og:title" content="Digital Marketing for Schools | BrandiVa Digital">
+  <meta property="og:description" content="Helping schools build a digital presence that gets seen, remembered and chosen.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://brandivadigital.com/schools.html">
+
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    :root {
+      --school-bg: #f5f1e8;
+      --school-paper: #fbfaf6;
+      --school-dark: #17232a;
+      --school-muted: #657078;
+      --school-line: rgba(23,35,42,.16);
+    }
+
+    body {
+      background: var(--school-bg);
+      color: var(--school-dark);
+    }
+
+    .school-page {
+      overflow: hidden;
+    }
+
+    .school-container {
+      width: min(1180px, calc(100% - 48px));
+      margin: 0 auto;
+    }
+
+    /* HERO */
+
+    .school-hero {
+      min-height: calc(100vh - 78px);
+      display: flex;
+      align-items: center;
+      padding: 90px 0 120px;
+    }
+
+    .school-eyebrow,
+    .school-label {
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: .16em;
+      text-transform: uppercase;
+      color: var(--school-muted);
+    }
+
+    .school-eyebrow {
+      margin-bottom: 35px;
+    }
+
+    .school-hero-grid {
+      display: grid;
+      grid-template-columns: 1fr 330px;
+      gap: 80px;
+      align-items: end;
+    }
+
+    .school-hero h1 {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(62px, 9vw, 135px);
+      line-height: .88;
+      font-weight: 500;
+      letter-spacing: -.055em;
+      margin: 0;
+      max-width: 950px;
+    }
+
+    .school-hero h1 span {
+      display: block;
+    }
+
+    .school-hero-copy {
+      padding-bottom: 8px;
+    }
+
+    .school-hero-copy p {
+      font-size: 18px;
+      line-height: 1.7;
+      color: var(--school-muted);
+      margin: 0 0 30px;
+    }
+
+    .school-link {
+      display: inline-flex;
+      gap: 12px;
+      align-items: center;
+      color: var(--school-dark);
+      text-decoration: none;
+      border-bottom: 1px solid var(--school-dark);
+      padding-bottom: 8px;
+      font-size: 14px;
+      font-weight: 600;
+    }
+
+    /* INTRO */
+
+    .school-intro {
+      background: var(--school-paper);
+      padding: 150px 0;
+    }
+
+    .school-intro-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 110px;
+    }
+
+    .school-intro h2 {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(48px, 6vw, 88px);
+      line-height: .96;
+      font-weight: 500;
+      letter-spacing: -.05em;
+      margin: 55px 0 0;
+    }
+
+    .school-intro-copy {
+      padding-top: 55px;
+    }
+
+    .school-intro-copy p {
+      font-size: 20px;
+      line-height: 1.75;
+      color: var(--school-muted);
+      margin: 0 0 30px;
+    }
+
+    /* JOURNEY */
+
+    .school-journey {
+      padding: 150px 0;
+    }
+
+    .school-journey h2 {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(50px, 6.5vw, 94px);
+      line-height: .93;
+      font-weight: 500;
+      letter-spacing: -.055em;
+      max-width: 900px;
+      margin: 55px 0 100px;
+    }
+
+    .school-journey-list {
+      border-top: 1px solid var(--school-line);
+    }
+
+    .school-journey-item {
+      display: grid;
+      grid-template-columns: 90px 220px 1fr 30px;
+      gap: 25px;
+      align-items: center;
+      padding: 32px 0;
+      border-bottom: 1px solid var(--school-line);
+      text-decoration: none;
+      color: var(--school-dark);
+      transition: padding .25s ease;
+    }
+
+    .school-journey-item:hover {
+      padding-left: 12px;
+    }
+
+    .school-journey-number {
+      font-size: 12px;
+      color: var(--school-muted);
+    }
+
+    .school-journey-item h3 {
+      margin: 0;
+      font-size: 17px;
+      letter-spacing: .08em;
+    }
+
+    .school-journey-item p {
+      margin: 0;
+      color: var(--school-muted);
+      line-height: 1.5;
+    }
+
+    .school-journey-arrow {
+      font-size: 20px;
+    }
+
+    /* THREE STAGES */
+
+    .school-stages {
+      background: var(--school-dark);
+      color: white;
+      padding: 150px 0;
+    }
+
+    .school-stages .school-label {
+      color: rgba(255,255,255,.55);
+    }
+
+    .school-stages h2 {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(50px, 7vw, 105px);
+      line-height: .92;
+      font-weight: 500;
+      letter-spacing: -.055em;
+      max-width: 900px;
+      margin: 55px 0 100px;
+    }
+
+    .school-stage-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      border-top: 1px solid rgba(255,255,255,.25);
+    }
+
+    .school-stage {
+      padding: 35px 35px 25px 0;
+      min-height: 390px;
+      text-decoration: none;
+      color: white;
+    }
+
+    .school-stage + .school-stage {
+      border-left: 1px solid rgba(255,255,255,.2);
+      padding-left: 35px;
+    }
+
+    .school-stage-number {
+      font-size: 12px;
+      color: rgba(255,255,255,.5);
+      margin-bottom: 80px;
+    }
+
+    .school-stage h3 {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 50px;
+      line-height: 1;
+      font-weight: 500;
+      margin: 0 0 22px;
+      letter-spacing: -.04em;
+    }
+
+    .school-stage p {
+      font-size: 16px;
+      line-height: 1.65;
+      color: rgba(255,255,255,.62);
+      max-width: 300px;
+      margin: 0 0 35px;
+    }
+
+    .school-stage-cta {
+      font-size: 13px;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+    }
+
+    /* SERVICES */
+
+    .school-services {
+      background: var(--school-paper);
+      padding: 150px 0;
+    }
+
+    .school-services-header {
+      display: grid;
+      grid-template-columns: .8fr 1.2fr;
+      gap: 100px;
+      margin-bottom: 85px;
+    }
+
+    .school-services h2 {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(50px, 6vw, 90px);
+      line-height: .94;
+      font-weight: 500;
+      letter-spacing: -.05em;
+      margin: 0;
+    }
+
+    .school-services-header p {
+      font-size: 19px;
+      line-height: 1.7;
+      color: var(--school-muted);
+      max-width: 600px;
+      margin: 0;
+    }
+
+    .school-service-list {
+      border-top: 1px solid var(--school-line);
+    }
+
+    .school-service {
+      display: grid;
+      grid-template-columns: 90px 1fr 30px;
+      gap: 25px;
+      align-items: center;
+      padding: 27px 0;
+      border-bottom: 1px solid var(--school-line);
+      text-decoration: none;
+      color: var(--school-dark);
+      transition: padding .25s ease;
+    }
+
+    .school-service:hover {
+      padding-left: 12px;
+    }
+
+    .school-service-number {
+      font-size: 12px;
+      color: var(--school-muted);
+    }
+
+    .school-service h3 {
+      margin: 0;
+      font-size: 20px;
+      font-weight: 500;
+    }
+
+    .school-service-arrow {
+      font-size: 20px;
+    }
+
+    /* DIFFERENCE */
+
+    .school-difference {
+      padding: 170px 0;
+      text-align: center;
+    }
+
+    .school-difference small {
+      display: block;
+      font-size: 12px;
+      letter-spacing: .15em;
+      text-transform: uppercase;
+      color: var(--school-muted);
+      margin-bottom: 45px;
+    }
+
+    .school-difference h2 {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(48px, 7vw, 105px);
+      line-height: .94;
+      letter-spacing: -.055em;
+      font-weight: 500;
+      max-width: 1050px;
+      margin: 0 auto;
+    }
+
+    .school-difference p {
+      max-width: 650px;
+      margin: 45px auto 0;
+      color: var(--school-muted);
+      font-size: 19px;
+      line-height: 1.7;
+    }
+
+    /* GROWTH */
+
+    .school-growth {
+      background: var(--school-paper);
+      padding: 150px 0;
+    }
+
+    .school-growth-grid {
+      display: grid;
+      grid-template-columns: .8fr 1.2fr;
+      gap: 100px;
+    }
+
+    .school-growth h2 {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(50px, 6vw, 88px);
+      line-height: .94;
+      font-weight: 500;
+      letter-spacing: -.05em;
+      margin: 0;
+    }
+
+    .school-growth-copy p {
+      font-size: 19px;
+      line-height: 1.7;
+      color: var(--school-muted);
+      margin: 0 0 45px;
+    }
+
+    .school-growth-link {
+      display: inline-flex;
+      gap: 12px;
+      align-items: center;
+      color: var(--school-dark);
+      text-decoration: none;
+      border-bottom: 1px solid var(--school-dark);
+      padding-bottom: 8px;
+      font-weight: 600;
+      font-size: 14px;
+    }
+
+    /* CTA */
+
+    .school-cta {
+      padding: 180px 0;
+      text-align: center;
+    }
+
+    .school-cta small {
+      display: block;
+      font-size: 12px;
+      letter-spacing: .15em;
+      text-transform: uppercase;
+      color: var(--school-muted);
+      margin-bottom: 40px;
+    }
+
+    .school-cta h2 {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(55px, 8vw, 120px);
+      line-height: .9;
+      letter-spacing: -.06em;
+      font-weight: 500;
+      max-width: 1050px;
+      margin: 0 auto 50px;
+    }
+
+    .school-cta-button {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      background: var(--school-dark);
+      color: white;
+      text-decoration: none;
+      padding: 17px 25px;
+      font-size: 14px;
+      font-weight: 600;
+    }
+
+    /* MOBILE */
+
+    @media (max-width: 850px) {
+
+      .school-container {
+        width: min(100% - 34px, 700px);
+      }
+
+      .school-hero {
+        min-height: auto;
+        padding: 80px 0 100px;
+      }
+
+      .school-hero-grid,
+      .school-intro-grid,
+      .school-services-header,
+      .school-growth-grid {
+        grid-template-columns: 1fr;
+        gap: 50px;
+      }
+
+      .school-hero h1 {
+        font-size: clamp(58px, 16vw, 100px);
+      }
+
+      .school-intro,
+      .school-journey,
+      .school-stages,
+      .school-services,
+      .school-growth {
+        padding: 100px 0;
+      }
+
+      .school-intro h2,
+      .school-journey h2,
+      .school-stages h2,
+      .school-services h2,
+      .school-growth h2,
+      .school-difference h2 {
+        font-size: clamp(48px, 13vw, 78px);
+      }
+
+      .school-intro-copy {
+        padding-top: 0;
+      }
+
+      .school-journey h2 {
+        margin-bottom: 65px;
+      }
+
+      .school-journey-item {
+        grid-template-columns: 45px 1fr 25px;
+      }
+
+      .school-journey-item p {
+        grid-column: 2 / 3;
+      }
+
+      .school-stage-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .school-stage {
+        min-height: auto;
+        padding: 35px 0;
+      }
+
+      .school-stage + .school-stage {
+        border-left: none;
+        border-top: 1px solid rgba(255,255,255,.2);
+        padding-left: 0;
+      }
+
+      .school-stage-number {
+        margin-bottom: 45px;
+      }
+
+      .school-service {
+        grid-template-columns: 45px 1fr 25px;
+      }
+
+      .school-cta {
+        padding: 120px 0;
+      }
+    }
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Digital Marketing for Schools",
+    "provider": {
+      "@type": "Organization",
+      "name": "BrandiVa Digital",
+      "url": "https://brandivadigital.com/"
+    },
+    "description": "Digital growth services for schools and educational institutions including websites, branding, content, social media, SEO and paid advertising."
+  }
+  </script>
+
+</head>
+
+<body>
+
+  <div id="header"></div>
+
+  <main class="school-page">
+
+    <!-- HERO -->
+    <section class="school-hero">
+      <div class="school-container">
+
+        <div class="school-hero-grid">
+
+          <div>
+            <div class="school-eyebrow">
+              For Schools & Educational Institutions
+            </div>
+
+            <h1>
+              <span>YOUR SCHOOL</span>
+              <span>DESERVES A</span>
+              <span>DIGITAL</span>
+              <span>PRESENCE.</span>
+            </h1>
+          </div>
+
+          <div class="school-hero-copy">
+
+            <p>
+              Your school has spent years building trust,
+              reputation and a community. We help translate
+              that value into a digital presence parents can
+              discover, understand and remember.
+            </p>
+
+            <a href="#approach" class="school-link">
+              See how we help
+              <span>→</span>
+            </a>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- INTRO -->
+    <section class="school-intro">
+
+      <div class="school-container">
+
+        <div class="school-label">
+          01 — Your Reality
+        </div>
+
+        <div class="school-intro-grid">
+
+          <h2>
+            Your school is more than what appears online.
+          </h2>
+
+          <div class="school-intro-copy">
+
+            <p>
+              Behind every school is a story — teachers who care,
+              students who grow, achievements worth celebrating,
+              years of trust and a community that believes in it.
+            </p>
+
+            <p>
+              But when parents search for your school,
+              they can only judge what they can find.
+            </p>
+
+            <p>
+              That is where BrandiVa comes in.
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- PARENT JOURNEY -->
+    <section class="school-journey">
+
+      <div class="school-container">
+
+        <div class="school-label">
+          02 — The Parent Journey
+        </div>
+
+        <h2>
+          Before a
