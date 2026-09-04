@@ -1,3 +1,883 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Contact BrandiVa Digital</title><meta name="description" content="Contact BrandiVa Digital for school websites, branding, social media and digital strategy."><link rel="stylesheet" href="style.css"></head><body><script src="header.js"></script><main>
-<section class="pagehero visual contact-hero"><div class="container"><div class="eyebrow">Let's Talk</div><h1>Maybe this is where your next chapter begins.</h1><p class="lead">Tell us a little about your institution or organisation. We'll start with a conversation—not a complicated sales pitch.</p></div></section>
-<section class="section"><div class="container contactbox"><div><h2>Start a conversation.</h2><p><strong>Email</strong><br><a href="mailto:hello@brandivadigital.com">hello@brandivadigital.com</a></p><p><strong>WhatsApp</strong><br><a href="https://wa.me/919102255770">+91 9102255770</a></p><p><strong>Based in</strong><br>Kolhapur, Maharashtra, India</p></div><form class="form" onsubmit="return sendWhatsApp(event)"><input id="name" name="name" placeholder="Your name" required><input id="phone" placeholder="Phone number"><select id="interest"><option>I'm interested in...</option><option>School Website</option><option>Social Media</option><option>Branding & Creative</option><option>Complete Digital Presence</option></select><textarea id="message" rows="5" placeholder="Tell us a little about your project"></textarea><button class="btn" type="submit">Send on WhatsApp →</button></form></div></section></main><script src="footer.js"></script><script>function sendWhatsApp(e){e.preventDefault();const n=document.getElementById('name').value,p=document.getElementById('phone').value,i=document.getElementById('interest').value,m=document.getElementById('message').value;const text=`Hello BrandiVa, my name is ${n}. Phone: ${p}. I am interested in: ${i}. Project details: ${m}`;window.open('https://wa.me/919102255770?text='+encodeURIComponent(text),'_blank');return false}</script></body></html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Contact BrandiVa Digital | School Digital Growth Partner</title>
+
+  <meta name="description"
+    content="Talk to BrandiVa Digital about your school's website, branding, content, digital marketing and growth strategy. Based in Kolhapur, Maharashtra.">
+
+  <meta name="keywords"
+    content="contact BrandiVa Digital, school digital marketing agency, school website agency India, school branding agency, education marketing agency, school website design Kolhapur">
+
+  <meta name="author" content="BrandiVa Digital">
+  <meta name="robots" content="index, follow">
+
+  <link rel="canonical"
+    href="https://brandivadigital.com/contact.html">
+
+  <meta property="og:title"
+    content="Let's Talk About Your School | BrandiVa Digital">
+
+  <meta property="og:description"
+    content="Your school already has a story. Let's build the digital presence that helps the right people see it.">
+
+  <meta property="og:type" content="website">
+
+  <meta property="og:url"
+    content="https://brandivadigital.com/contact.html">
+
+  <link rel="stylesheet" href="style.css">
+
+
+  <style>
+
+    :root {
+      --contact-bg: #f3efe6;
+      --contact-paper: #faf9f5;
+      --contact-dark: #17232a;
+      --contact-muted: #68747a;
+      --contact-line: rgba(23,35,42,.16);
+    }
+
+    body {
+      margin: 0;
+      background: var(--contact-bg);
+      color: var(--contact-dark);
+    }
+
+    .contact-page {
+      overflow: hidden;
+    }
+
+    .contact-container {
+      width: min(1120px, calc(100% - 42px));
+      margin: 0 auto;
+    }
+
+    .contact-label {
+      font-size: 11px;
+      letter-spacing: .18em;
+      text-transform: uppercase;
+      font-weight: 600;
+      color: var(--contact-muted);
+    }
+
+
+    /* HERO */
+
+    .contact-hero {
+      padding: 155px 0 110px;
+    }
+
+    .contact-hero h1 {
+      max-width: 1000px;
+      margin: 42px 0 0;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(65px, 10vw, 130px);
+      line-height: .86;
+      letter-spacing: -.065em;
+      font-weight: 500;
+    }
+
+    .contact-hero h1 span {
+      display: block;
+      color: var(--contact-muted);
+    }
+
+    .contact-intro {
+      max-width: 650px;
+      margin: 55px 0 0;
+      font-size: 20px;
+      line-height: 1.75;
+      color: var(--contact-muted);
+    }
+
+
+    /* CONTACT AREA */
+
+    .contact-main {
+      background: var(--contact-paper);
+      padding: 110px 0 130px;
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1.15fr;
+      gap: 90px;
+      align-items: start;
+    }
+
+
+    /* LEFT */
+
+    .contact-copy h2 {
+      margin: 25px 0 30px;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(42px, 5vw, 65px);
+      line-height: .98;
+      letter-spacing: -.05em;
+      font-weight: 500;
+    }
+
+    .contact-copy p {
+      max-width: 500px;
+      font-size: 17px;
+      line-height: 1.8;
+      color: var(--contact-muted);
+      margin-bottom: 28px;
+    }
+
+
+    /* DIRECT CONTACT */
+
+    .contact-direct {
+      margin-top: 55px;
+      border-top: 1px solid var(--contact-line);
+    }
+
+    .direct-item {
+      padding: 25px 0;
+      border-bottom: 1px solid var(--contact-line);
+    }
+
+    .direct-item small {
+      display: block;
+      font-size: 10px;
+      letter-spacing: .16em;
+      text-transform: uppercase;
+      color: var(--contact-muted);
+      margin-bottom: 8px;
+    }
+
+    .direct-item a {
+      color: var(--contact-dark);
+      text-decoration: none;
+      font-size: 18px;
+    }
+
+    .direct-item a:hover {
+      text-decoration: underline;
+    }
+
+
+    /* FORM */
+
+    .contact-form-wrap {
+      border-top: 1px solid var(--contact-line);
+    }
+
+    .form-intro {
+      padding: 25px 0 35px;
+      font-size: 15px;
+      line-height: 1.7;
+      color: var(--contact-muted);
+    }
+
+    .contact-form {
+      display: grid;
+      gap: 0;
+    }
+
+    .field {
+      border-top: 1px solid var(--contact-line);
+      padding: 25px 0;
+    }
+
+    .field label {
+      display: block;
+      font-size: 10px;
+      letter-spacing: .16em;
+      text-transform: uppercase;
+      color: var(--contact-muted);
+      margin-bottom: 12px;
+      font-weight: 600;
+    }
+
+    .field input,
+    .field textarea,
+    .field select {
+      width: 100%;
+      box-sizing: border-box;
+      border: 0;
+      outline: 0;
+      background: transparent;
+      color: var(--contact-dark);
+      font-family: inherit;
+      font-size: 18px;
+      padding: 5px 0;
+      border-radius: 0;
+    }
+
+    .field textarea {
+      min-height: 120px;
+      resize: vertical;
+    }
+
+    .field input::placeholder,
+    .field textarea::placeholder {
+      color: #9aa0a3;
+    }
+
+    .contact-submit {
+      margin-top: 25px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 14px;
+      width: fit-content;
+      border: 0;
+      background: var(--contact-dark);
+      color: white;
+      padding: 18px 28px;
+      font-family: inherit;
+      font-size: 13px;
+      font-weight: 600;
+      cursor: pointer;
+    }
+
+
+    /* PROCESS */
+
+    .contact-process {
+      padding: 130px 0;
+      background: var(--contact-bg);
+    }
+
+    .contact-process h2 {
+      max-width: 750px;
+      margin: 30px 0 80px;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(48px, 6vw, 78px);
+      line-height: .92;
+      letter-spacing: -.055em;
+      font-weight: 500;
+    }
+
+    .process-list {
+      border-top: 1px solid var(--contact-line);
+    }
+
+    .process-item {
+      display: grid;
+      grid-template-columns: 70px 250px 1fr;
+      gap: 30px;
+      padding: 30px 0;
+      border-bottom: 1px solid var(--contact-line);
+    }
+
+    .process-number {
+      font-size: 11px;
+      color: var(--contact-muted);
+    }
+
+    .process-title {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 28px;
+    }
+
+    .process-text {
+      max-width: 500px;
+      color: var(--contact-muted);
+      font-size: 16px;
+      line-height: 1.7;
+    }
+
+
+    /* FINAL CTA */
+
+    .contact-final {
+      background: var(--contact-dark);
+      color: white;
+      padding: 145px 0;
+      text-align: center;
+    }
+
+    .contact-final .contact-label {
+      color: rgba(255,255,255,.48);
+    }
+
+    .contact-final h2 {
+      max-width: 950px;
+      margin: 42px auto;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(55px, 8vw, 105px);
+      line-height: .88;
+      letter-spacing: -.06em;
+      font-weight: 500;
+    }
+
+    .contact-final p {
+      max-width: 620px;
+      margin: 0 auto 40px;
+      color: rgba(255,255,255,.62);
+      font-size: 18px;
+      line-height: 1.7;
+    }
+
+    .contact-whatsapp {
+      display: inline-flex;
+      padding: 17px 28px;
+      background: white;
+      color: var(--contact-dark);
+      text-decoration: none;
+      font-size: 13px;
+      font-weight: 600;
+    }
+
+
+    /* MOBILE */
+
+    @media (max-width: 760px) {
+
+      .contact-container {
+        width: min(100% - 34px, 700px);
+      }
+
+      .contact-hero {
+        padding: 105px 0 75px;
+      }
+
+      .contact-hero h1 {
+        font-size: clamp(55px, 15vw, 85px);
+      }
+
+      .contact-intro {
+        font-size: 18px;
+      }
+
+      .contact-main {
+        padding: 75px 0 90px;
+      }
+
+      .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 70px;
+      }
+
+      .contact-copy h2 {
+        font-size: 45px;
+      }
+
+      .contact-process {
+        padding: 90px 0;
+      }
+
+      .contact-process h2 {
+        font-size: 48px;
+        margin-bottom: 55px;
+      }
+
+      .process-item {
+        grid-template-columns: 45px 1fr;
+        gap: 15px;
+      }
+
+      .process-text {
+        grid-column: 2;
+      }
+
+      .contact-final {
+        padding: 100px 0;
+      }
+
+      .contact-final h2 {
+        font-size: 55px;
+      }
+
+    }
+
+  </style>
+
+
+  <!-- ORGANIZATION STRUCTURED DATA -->
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "BrandiVa Digital",
+    "url": "https://brandivadigital.com/",
+    "email": "hello@brandivadigital.com",
+    "telephone": "+919102255770",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Padmaraje Chowk",
+      "addressLocality": "Kolhapur",
+      "addressRegion": "Maharashtra",
+      "addressCountry": "IN"
+    },
+    "sameAs": [
+      "https://www.instagram.com/brandiva_digtal/"
+    ]
+  }
+  </script>
+
+
+  <!-- CONTACT PAGE STRUCTURED DATA -->
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ContactPage",
+    "name": "Contact BrandiVa Digital",
+    "description": "Contact BrandiVa Digital for school websites, branding, content and digital growth.",
+    "url": "https://brandivadigital.com/contact.html",
+    "publisher": {
+      "@type": "Organization",
+      "name": "BrandiVa Digital",
+      "url": "https://brandivadigital.com/"
+    }
+  }
+  </script>
+
+</head>
+
+
+<body>
+
+  <div id="header"></div>
+
+
+  <main class="contact-page">
+
+
+    <!-- HERO -->
+
+    <section class="contact-hero">
+
+      <div class="contact-container">
+
+        <div class="contact-label">
+          Start a Conversation
+        </div>
+
+        <h1>
+          Let's talk
+          <span>about your school.</span>
+        </h1>
+
+        <p class="contact-intro">
+          Your school already has a story, a reputation and years
+          of work behind it. Let's understand where you are today
+          and explore what your digital presence could become.
+        </p>
+
+      </div>
+
+    </section>
+
+
+    <!-- CONTACT -->
+
+    <section class="contact-main">
+
+      <div class="contact-container">
+
+        <div class="contact-grid">
+
+
+          <!-- LEFT SIDE -->
+
+          <div class="contact-copy">
+
+            <div class="contact-label">
+              Before We Build
+            </div>
+
+            <h2>
+              We want to understand first.
+            </h2>
+
+            <p>
+              We don't believe every school needs the same
+              marketing plan.
+            </p>
+
+            <p>
+              Some schools need a stronger digital foundation.
+              Some need a clearer story. Others are ready to
+              accelerate enquiries and admissions.
+            </p>
+
+            <p>
+              That's why our first conversation is about your
+              school — not about selling you a package.
+            </p>
+
+
+            <!-- CONTACT DETAILS -->
+
+            <div class="contact-direct">
+
+
+              <div class="direct-item">
+
+                <small>
+                  Email
+                </small>
+
+                <a href="mailto:hello@brandivadigital.com">
+                  hello@brandivadigital.com
+                </a>
+
+              </div>
+
+
+              <div class="direct-item">
+
+                <small>
+                  Contact / WhatsApp
+                </small>
+
+                <a
+                  href="https://wa.me/919102255770"
+                  target="_blank"
+                  rel="noopener">
+                  +91 9102255770
+                </a>
+
+              </div>
+
+
+              <div class="direct-item">
+
+                <small>
+                  Instagram
+                </small>
+
+                <a
+                  href="https://www.instagram.com/brandiva_digtal/"
+                  target="_blank"
+                  rel="noopener">
+                  @brandiva_digtal
+                </a>
+
+              </div>
+
+
+              <div class="direct-item">
+
+                <small>
+                  Location
+                </small>
+
+                <span>
+                  Padmaraje Chowk, Kolhapur
+                </span>
+
+              </div>
+
+
+            </div>
+
+          </div>
+
+
+          <!-- FORM -->
+
+          <div class="contact-form-wrap">
+
+            <div class="form-intro">
+              Tell us a little about your school and what
+              you're looking to improve. We'll take it from there.
+            </div>
+
+            <form
+              class="contact-form"
+              action="mailto:hello@brandivadigital.com"
+              method="post"
+              enctype="text/plain">
+
+
+              <div class="field">
+
+                <label for="name">
+                  Your Name
+                </label>
+
+                <input
+                  type="text"
+                  id="name"
+                  name="Name"
+                  placeholder="Your name"
+                  required>
+
+              </div>
+
+
+              <div class="field">
+
+                <label for="school">
+                  School / Institution
+                </label>
+
+                <input
+                  type="text"
+                  id="school"
+                  name="School"
+                  placeholder="School name"
+                  required>
+
+              </div>
+
+
+              <div class="field">
+
+                <label for="email">
+                  Email
+                </label>
+
+                <input
+                  type="email"
+                  id="email"
+                  name="Email"
+                  placeholder="Your email address"
+                  required>
+
+              </div>
+
+
+              <div class="field">
+
+                <label for="phone">
+                  Phone / WhatsApp
+                </label>
+
+                <input
+                  type="tel"
+                  id="phone"
+                  name="Phone"
+                  placeholder="Your contact number"
+                  required>
+
+              </div>
+
+
+              <div class="field">
+
+                <label for="interest">
+                  What are you looking for?
+                </label>
+
+                <select
+                  id="interest"
+                  name="Requirement">
+
+                  <option value="">
+                    Select one
+                  </option>
+
+                  <option>
+                    School Website
+                  </option>
+
+                  <option>
+                    Branding & Identity
+                  </option>
+
+                  <option>
+                    Content & Social Media
+                  </option>
+
+                  <option>
+                    Meta / Google Ads
+                  </option>
+
+                  <option>
+                    Complete Digital Growth Plan
+                  </option>
+
+                  <option>
+                    Not sure yet
+                  </option>
+
+                </select>
+
+              </div>
+
+
+              <div class="field">
+
+                <label for="message">
+                  Tell us more
+                </label>
+
+                <textarea
+                  id="message"
+                  name="Message"
+                  placeholder="What would you like to improve about your school's digital presence?"></textarea>
+
+              </div>
+
+
+              <button
+                type="submit"
+                class="contact-submit">
+
+                Send Enquiry
+                <span>→</span>
+
+              </button>
+
+
+            </form>
+
+          </div>
+
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- PROCESS -->
+
+    <section class="contact-process">
+
+      <div class="contact-container">
+
+        <div class="contact-label">
+          What Happens Next
+        </div>
+
+        <h2>
+          A conversation first.
+          A plan after.
+        </h2>
+
+
+        <div class="process-list">
+
+
+          <div class="process-item">
+
+            <div class="process-number">
+              01
+            </div>
+
+            <div class="process-title">
+              Discover
+            </div>
+
+            <div class="process-text">
+              We understand your school, its story, goals,
+              challenges and current digital presence.
+            </div>
+
+          </div>
+
+
+          <div class="process-item">
+
+            <div class="process-number">
+              02
+            </div>
+
+            <div class="process-title">
+              Plan
+            </div>
+
+            <div class="process-text">
+              We identify what your school actually needs
+              and create a strategy around those priorities.
+            </div>
+
+          </div>
+
+
+          <div class="process-item">
+
+            <div class="process-number">
+              03
+            </div>
+
+            <div class="process-title">
+              Build
+            </div>
+
+            <div class="process-text">
+              We bring the strategy to life through the right
+              combination of website, branding, content and
+              digital marketing.
+            </div>
+
+          </div>
+
+
+          <div class="process-item">
+
+            <div class="process-number">
+              04
+            </div>
+
+            <div class="process-title">
+              Grow
+            </div>
+
+            <div class="process-text">
+              We measure what is working, learn from the data
+              and keep improving the digital journey.
+            </div>
+
+          </div>
+
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- FINAL CTA -->
+
+    <section class="contact-final">
+
+      <div class="contact-container">
+
+        <div class="contact-label">
+          Your School Has A Story
+        </div>
+
+        <h2>
+          Let's make sure
+          it's seen.
+        </h2>
+
+        <p>
+          Tell us where your school is today.
+          We'll help you think about where its digital presence
+          can go next.
+        </p>
+
+        <a
+          href="https://wa.me/919102255770"
+          target="_blank"
+          rel="noopener"
+          class="contact-whatsapp">
+
+          Talk to BrandiVa on WhatsApp →
+
+        </a>
+
+      </div>
+
+    </section>
+
+
+  </main>
+
+
+  <script src="header.js"></script>
+  <script src="footer.js"></script>
+
+</body>
+
+</html>
