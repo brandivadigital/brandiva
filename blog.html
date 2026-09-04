@@ -1,692 +1,508 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
   <meta charset="UTF-8">
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>BrandiVa Journal | Digital Growth Ideas for Schools</title>
+  <title>Why Every School Needs a Professional Website in 2026 | BrandiVa Digital</title>
 
-  <meta name="description"
-    content="Insights and practical ideas for schools on websites, branding, digital marketing, admissions, parent communication and digital growth.">
+  <meta name="description" content="Discover why every school needs a professional website in 2026. Learn how school websites improve admissions, trust, visibility, communication and digital growth.">
 
-  <meta name="keywords"
-    content="school digital marketing, school website, school branding, school admissions marketing, education marketing, school social media">
+  <meta name="keywords" content="school website design, professional school website, school website development, education marketing, school digital marketing, SEO for schools">
 
   <meta name="author" content="BrandiVa Digital">
-  <meta name="robots" content="index, follow">
-
-  <link rel="canonical" href="https://brandivadigital.com/blog.html">
-
-  <meta property="og:title" content="BrandiVa Journal | Digital Growth Ideas for Schools">
-  <meta property="og:description"
-    content="Ideas and insights to help schools become more visible, memorable and easier to choose.">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://brandivadigital.com/blog.html">
-
-  <link rel="stylesheet" href="style.css">
 
   <style>
 
-    :root {
-      --blog-bg: #f4f0e7;
-      --blog-paper: #faf9f5;
-      --blog-dark: #17232a;
-      --blog-muted: #69747a;
-      --blog-line: rgba(23,35,42,.16);
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
     }
 
     body {
-      margin: 0;
-      background: var(--blog-bg);
-      color: var(--blog-dark);
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f7f5f1;
+      color: #243746;
+      line-height: 1.8;
     }
 
-    .blog-page {
-      overflow: hidden;
-    }
-
-    .blog-container {
-      width: min(1180px, calc(100% - 48px));
-      margin: 0 auto;
-    }
-
-    .blog-label {
-      font-size: 12px;
-      letter-spacing: .16em;
-      text-transform: uppercase;
-      color: var(--blog-muted);
-      font-weight: 600;
-    }
-
-
-    /* HERO */
-
-    .blog-hero {
-      min-height: calc(100vh - 78px);
-      display: flex;
-      align-items: center;
-      padding: 90px 0 120px;
-    }
-
-    .blog-hero-grid {
-      display: grid;
-      grid-template-columns: 1fr 300px;
-      gap: 90px;
-      align-items: end;
-    }
-
-    .blog-hero h1 {
-      font-family: Georgia, "Times New Roman", serif;
-      font-size: clamp(65px, 9vw, 135px);
-      line-height: .87;
-      letter-spacing: -.06em;
-      font-weight: 500;
-      margin: 38px 0 0;
-    }
-
-    .blog-hero-copy {
-      padding-bottom: 12px;
-    }
-
-    .blog-hero-copy p {
-      font-size: 18px;
-      line-height: 1.7;
-      color: var(--blog-muted);
-      margin: 0;
-    }
-
-
-    /* FEATURED */
-
-    .blog-featured {
-      background: var(--blog-paper);
-      padding: 150px 0;
-    }
-
-    .blog-featured-grid {
-      display: grid;
-      grid-template-columns: .7fr 1.3fr;
-      gap: 100px;
-      align-items: start;
-    }
-
-    .blog-featured h2 {
-      font-family: Georgia, "Times New Roman", serif;
-      font-size: clamp(48px, 6vw, 82px);
-      line-height: .94;
-      letter-spacing: -.055em;
-      font-weight: 500;
-      margin: 55px 0 0;
-    }
-
-    .featured-article {
-      border-top: 1px solid var(--blog-line);
-      padding-top: 32px;
-    }
-
-    .article-meta {
+    header {
+      width: 100%;
+      padding: 24px 8%;
       display: flex;
       justify-content: space-between;
-      gap: 20px;
-      color: var(--blog-muted);
-      font-size: 12px;
-      text-transform: uppercase;
-      letter-spacing: .1em;
-      margin-bottom: 45px;
-    }
-
-    .featured-article h3 {
-      font-family: Georgia, "Times New Roman", serif;
-      font-size: clamp(38px, 5vw, 65px);
-      line-height: .98;
-      letter-spacing: -.04em;
-      font-weight: 500;
-      margin: 0 0 30px;
-    }
-
-    .featured-article p {
-      color: var(--blog-muted);
-      font-size: 18px;
-      line-height: 1.75;
-      max-width: 650px;
-      margin: 0 0 35px;
-    }
-
-    .article-link {
-      display: inline-flex;
       align-items: center;
-      gap: 12px;
-      color: var(--blog-dark);
+      background: #f7f5f1;
+      border-bottom: 1px solid #e6e1d8;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      color: #243746;
+    }
+
+    .logo span {
+      color: #a87558;
+    }
+
+    nav a {
       text-decoration: none;
+      color: #243746;
+      margin-left: 28px;
       font-size: 14px;
-      font-weight: 600;
-      border-bottom: 1px solid var(--blog-dark);
-      padding-bottom: 7px;
+      transition: 0.3s;
     }
 
-
-    /* TOPICS */
-
-    .blog-topics {
-      padding: 150px 0;
+    nav a:hover {
+      color: #a87558;
     }
 
-    .blog-topics h2 {
-      font-family: Georgia, "Times New Roman", serif;
-      font-size: clamp(50px, 6vw, 88px);
-      line-height: .94;
-      letter-spacing: -.055em;
-      font-weight: 500;
-      margin: 55px 0 90px;
-      max-width: 850px;
-    }
-
-    .topic-list {
-      border-top: 1px solid var(--blog-line);
-    }
-
-    .topic {
-      display: grid;
-      grid-template-columns: 80px 1fr 300px;
-      gap: 30px;
-      padding: 34px 0;
-      border-bottom: 1px solid var(--blog-line);
-      align-items: center;
-    }
-
-    .topic-number {
-      font-size: 12px;
-      color: var(--blog-muted);
-    }
-
-    .topic h3 {
-      font-family: Georgia, "Times New Roman", serif;
-      font-size: 32px;
-      font-weight: 500;
-      margin: 0;
-    }
-
-    .topic p {
-      margin: 0;
-      color: var(--blog-muted);
-      font-size: 15px;
-      line-height: 1.6;
-    }
-
-
-    /* POINT OF VIEW */
-
-    .blog-point {
-      background: var(--blog-dark);
-      color: white;
-      padding: 160px 0;
+    .hero {
+      max-width: 1100px;
+      margin: auto;
+      padding: 100px 30px 70px;
       text-align: center;
     }
 
-    .blog-point .blog-label {
-      color: rgba(255,255,255,.5);
+    .tag {
+      display: inline-block;
+      font-size: 12px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: #a87558;
+      margin-bottom: 25px;
+      font-weight: bold;
     }
 
-    .blog-point h2 {
-      font-family: Georgia, "Times New Roman", serif;
-      font-size: clamp(52px, 7vw, 105px);
-      line-height: .92;
-      letter-spacing: -.06em;
-      font-weight: 500;
-      max-width: 1050px;
-      margin: 50px auto 0;
+    .hero h1 {
+      font-family: Georgia, serif;
+      font-size: 58px;
+      line-height: 1.15;
+      max-width: 900px;
+      margin: auto;
+      color: #243746;
     }
 
-    .blog-point p {
+    .hero p {
       max-width: 700px;
-      margin: 45px auto 0;
-      color: rgba(255,255,255,.62);
+      margin: 25px auto 0;
+      font-size: 18px;
+      color: #64707a;
+    }
+
+    .article {
+      max-width: 850px;
+      margin: auto;
+      background: #ffffff;
+      padding: 70px;
+      margin-bottom: 80px;
+      box-shadow: 0 10px 40px rgba(0,0,0,0.05);
+    }
+
+    .article h2 {
+      font-family: Georgia, serif;
+      font-size: 32px;
+      margin-top: 50px;
+      margin-bottom: 18px;
+      color: #243746;
+      line-height: 1.3;
+    }
+
+    .article p {
+      font-size: 17px;
+      color: #4d5963;
+      margin-bottom: 20px;
+    }
+
+    .article ul {
+      margin: 20px 0 25px 25px;
+    }
+
+    .article li {
+      margin-bottom: 8px;
+      color: #4d5963;
+      font-size: 17px;
+    }
+
+    .highlight {
+      border-left: 4px solid #a87558;
+      padding: 25px;
+      background: #faf7f2;
+      margin: 35px 0;
       font-size: 19px;
-      line-height: 1.75;
+      font-family: Georgia, serif;
+      color: #243746;
     }
 
-
-    /* COMING */
-
-    .blog-coming {
-      padding: 160px 0;
-      background: var(--blog-paper);
-    }
-
-    .blog-coming-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 100px;
-    }
-
-    .blog-coming h2 {
-      font-family: Georgia, "Times New Roman", serif;
-      font-size: clamp(50px, 6vw, 85px);
-      line-height: .94;
-      letter-spacing: -.055em;
-      font-weight: 500;
-      margin: 0;
-    }
-
-    .blog-coming-copy p {
-      color: var(--blog-muted);
-      font-size: 19px;
-      line-height: 1.75;
-      margin: 0 0 30px;
-    }
-
-
-    /* CTA */
-
-    .blog-cta {
-      padding: 180px 0;
+    .cta {
+      max-width: 850px;
+      margin: 0 auto 80px;
+      padding: 60px;
+      background: #243746;
+      color: white;
       text-align: center;
     }
 
-    .blog-cta small {
-      display: block;
-      font-size: 12px;
-      letter-spacing: .16em;
-      text-transform: uppercase;
-      color: var(--blog-muted);
-      margin-bottom: 40px;
+    .cta h2 {
+      font-family: Georgia, serif;
+      font-size: 38px;
+      margin-bottom: 15px;
     }
 
-    .blog-cta h2 {
-      font-family: Georgia, "Times New Roman", serif;
-      font-size: clamp(55px, 8vw, 115px);
-      line-height: .9;
-      letter-spacing: -.06em;
-      font-weight: 500;
-      max-width: 1000px;
-      margin: 0 auto 50px;
+    .cta p {
+      color: #d7dde1;
+      max-width: 600px;
+      margin: auto;
+      margin-bottom: 30px;
     }
 
-    .blog-cta-button {
-      display: inline-flex;
-      align-items: center;
-      gap: 12px;
-      background: var(--blog-dark);
+    .cta a {
+      display: inline-block;
+      background: #c08a68;
       color: white;
       text-decoration: none;
-      padding: 17px 26px;
+      padding: 14px 30px;
       font-size: 14px;
-      font-weight: 600;
+      transition: 0.3s;
     }
 
+    .cta a:hover {
+      background: white;
+      color: #243746;
+    }
 
-    /* MOBILE */
+    footer {
+      background: #1d2d38;
+      color: #cbd2d6;
+      text-align: center;
+      padding: 35px 20px;
+      font-size: 14px;
+    }
 
-    @media (max-width: 850px) {
+    footer a {
+      color: #d9a382;
+      text-decoration: none;
+    }
 
-      .blog-container {
-        width: min(100% - 34px, 700px);
+    @media (max-width: 768px) {
+
+      header {
+        padding: 18px 5%;
+        flex-direction: column;
+        gap: 15px;
       }
 
-      .blog-hero {
-        min-height: auto;
-        padding: 80px 0 100px;
+      nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
       }
 
-      .blog-hero-grid,
-      .blog-featured-grid,
-      .blog-coming-grid {
-        grid-template-columns: 1fr;
-        gap: 50px;
+      nav a {
+        margin-left: 0;
       }
 
-      .blog-hero h1 {
-        font-size: clamp(58px, 16vw, 100px);
+      .hero {
+        padding: 70px 20px 50px;
       }
 
-      .blog-featured,
-      .blog-topics,
-      .blog-point,
-      .blog-coming {
-        padding: 100px 0;
+      .hero h1 {
+        font-size: 40px;
       }
 
-      .blog-featured h2,
-      .blog-topics h2,
-      .blog-point h2,
-      .blog-coming h2 {
-        font-size: clamp(48px, 13vw, 78px);
+      .article {
+        margin: 20px;
+        padding: 35px 25px;
       }
 
-      .topic {
-        grid-template-columns: 45px 1fr;
-        gap: 20px;
+      .article h2 {
+        font-size: 28px;
       }
 
-      .topic p {
-        grid-column: 2;
+      .cta {
+        margin: 20px;
+        padding: 40px 25px;
       }
 
-      .blog-cta {
-        padding: 120px 0;
+      .cta h2 {
+        font-size: 30px;
       }
-
     }
 
   </style>
-
-
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Blog",
-    "name": "BrandiVa Journal",
-    "url": "https://brandivadigital.com/blog.html",
-    "description": "Ideas and insights about school websites, branding, digital marketing and growth."
-  }
-  </script>
-
 </head>
-
 
 <body>
 
-  <div id="header"></div>
+<header>
+  <div class="logo">BRANDI<span>VA</span></div>
 
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="schools.html">For Schools</a>
+    <a href="services.html">Services</a>
+    <a href="work.html">Our Work</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
 
-  <main class="blog-page">
 
+<section class="hero">
 
-    <!-- HERO -->
+  <div class="tag">BrandiVa Insights</div>
 
-    <section class="blog-hero">
+  <h1>Why Every School Needs a Professional Website in 2026</h1>
 
-      <div class="blog-container">
+  <p>
+    A school's digital presence is no longer optional.
+    It is becoming one of the first places where trust,
+    perception and important decisions begin.
+  </p>
 
-        <div class="blog-hero-grid">
+</section>
 
-          <div>
 
-            <div class="blog-label">
-              BrandiVa Journal
-            </div>
+<article class="article">
 
-            <h1>
-              Ideas for<br>
-              schools in a<br>
-              digital world.
-            </h1>
+  <p>
+    In 2026, a school's website is no longer just an additional digital feature—it has become an essential part of its identity.
+    Before visiting a school, parents increasingly search online to understand its academic environment, facilities, achievements,
+    admission process, and overall reputation.
+  </p>
 
-          </div>
+  <p>
+    In many cases, a school website creates the first impression long before a parent walks through the school gate.
+    That is why every school needs a professional, modern, and informative website.
+  </p>
 
 
-          <div class="blog-hero-copy">
+  <h2>Parents Search Online Before Choosing a School</h2>
 
-            <p>
-              Thinking, observations and practical ideas
-              about school websites, branding, communication
-              and digital growth.
-            </p>
+  <p>
+    Choosing the right school is one of the most important decisions for parents.
+    Naturally, they want to research before making that decision.
+  </p>
 
-          </div>
+  <p>Parents often search online for information such as:</p>
 
-        </div>
+  <ul>
+    <li>School admission process</li>
+    <li>Academic programs</li>
+    <li>Faculty details</li>
+    <li>Infrastructure and facilities</li>
+    <li>Student achievements</li>
+    <li>Sports and extracurricular activities</li>
+    <li>School location and contact information</li>
+    <li>Fees and eligibility details</li>
+  </ul>
 
-      </div>
+  <p>
+    A professional school website makes this information easily accessible and helps parents understand what the institution offers.
+  </p>
 
-    </section>
 
+  <h2>A Website Creates a Powerful First Impression</h2>
 
+  <p>
+    Your website is often the first interaction between your school and a potential parent.
+  </p>
 
-    <!-- FEATURED ARTICLE -->
+  <p>
+    An outdated, slow, or poorly designed website can create a negative impression.
+    On the other hand, a modern and professionally designed school website communicates trust, quality, and credibility.
+  </p>
 
-    <section class="blog-featured">
+  <p>
+    A good website should reflect the personality and values of the institution while presenting information in a clear and engaging way.
+    In today's digital world, the quality of your online presence influences how people perceive your school.
+  </p>
 
-      <div class="blog-container">
 
-        <div class="blog-featured-grid">
+  <h2>Make the Admission Process Easier</h2>
 
-          <div>
+  <p>
+    A professional school website can simplify the admission journey for parents.
+    Instead of repeatedly calling or visiting the school for basic information, parents can find important details online.
+  </p>
 
-            <div class="blog-label">
-              01 — Featured
-            </div>
+  <p>A well-designed website can provide:</p>
 
-            <h2>
-              Start with
-              the foundation.
-            </h2>
+  <ul>
+    <li>Admission guidelines</li>
+    <li>Important dates</li>
+    <li>Eligibility criteria</li>
+    <li>Required documents</li>
+    <li>Online enquiry forms</li>
+    <li>Downloadable brochures</li>
+  </ul>
 
-          </div>
+  <p>
+    This not only improves the parent experience but also saves valuable time for school administrators.
+  </p>
 
 
-          <article class="featured-article">
+  <h2>Showcase Your School's Achievements</h2>
 
-            <div class="article-meta">
-              <span>School Websites</span>
-              <span>2026</span>
-            </div>
+  <p>
+    Every school has achievements worth celebrating.
+    Whether it is academic excellence, sports victories, cultural programs, innovative teaching methods,
+    or student success stories, a website provides the perfect platform to showcase them.
+  </p>
 
-            <h3>
-              Why Every School Needs
-              a Professional Website
-              in 2026
-            </h3>
+  <p>Professional school website design allows institutions to present their strengths through:</p>
 
-            <p>
-              A school's website is no longer just an online
-              brochure. For many parents, it is one of the first
-              places they go when they begin evaluating a school.
-            </p>
+  <ul>
+    <li>Photo galleries</li>
+    <li>Event updates</li>
+    <li>Student achievements</li>
+    <li>Awards and recognitions</li>
+    <li>Faculty introductions</li>
+    <li>Campus facilities</li>
+    <li>Success stories</li>
+  </ul>
 
-            <a
-              href="article-school-website.html"
-              class="article-link">
-              Read the full article
-              <span>→</span>
-            </a>
+  <p>
+    Your website becomes a digital window into the life and culture of your school.
+  </p>
 
-          </article>
 
-        </div>
+  <h2>Build Trust With Parents</h2>
 
-      </div>
+  <p>
+    Trust plays a major role when parents choose an educational institution.
+    A professional and regularly updated website makes a school appear more transparent, organized, and credible.
+  </p>
 
-    </section>
+  <p>
+    When parents can easily find authentic information about the school, its faculty,
+    facilities, achievements, and admission process, they feel more confident about the institution.
+  </p>
 
+  <p>
+    In 2026, a strong digital presence is becoming an important part of building institutional trust.
+  </p>
 
 
-    <!-- TOPICS -->
+  <h2>Mobile-Friendly Design Is No Longer Optional</h2>
 
-    <section class="blog-topics">
+  <p>
+    Most parents now search for schools using smartphones.
+    If a website is difficult to use on mobile devices, visitors may leave before exploring important information.
+  </p>
 
-      <div class="blog-container">
+  <p>A modern school website should be:</p>
 
-        <div class="blog-label">
-          02 — What We Explore
-        </div>
+  <ul>
+    <li>Mobile responsive</li>
+    <li>Fast loading</li>
+    <li>Easy to navigate</li>
+    <li>Visually appealing</li>
+    <li>Search engine optimized</li>
+  </ul>
 
-        <h2>
-          The questions behind
-          better digital presence.
-        </h2>
+  <p>
+    A mobile-friendly website ensures that parents can access information anytime, anywhere.
+  </p>
 
 
-        <div class="topic-list">
+  <h2>Improve Visibility on Google</h2>
 
+  <p>
+    A professional website also helps schools improve their presence on search engines.
+  </p>
 
-          <div class="topic">
+  <p>Parents frequently search for terms like:</p>
 
-            <div class="topic-number">01</div>
+  <ul>
+    <li>Best schools in their city</li>
+    <li>CBSE schools near me</li>
+    <li>Private schools in their city</li>
+    <li>School admissions 2026</li>
+    <li>Best English medium schools</li>
+  </ul>
 
-            <h3>School Websites</h3>
+  <p>
+    With proper SEO and relevant website content, schools can improve their chances of appearing in these searches.
+    This makes a professional website an important part of a school's long-term digital growth strategy.
+  </p>
 
-            <p>
-              How a school's website can build clarity,
-              trust and stronger first impressions.
-            </p>
 
-          </div>
+  <h2>Stay Competitive in a Digital-First World</h2>
 
+  <p>
+    Education is becoming increasingly competitive.
+    Schools are investing in better infrastructure, branding, communication, and digital presence.
+  </p>
 
-          <div class="topic">
+  <p>
+    Parents now compare institutions not only based on recommendations but also on the information they find online.
+    A professional website helps schools stay relevant and competitive in this changing environment.
+  </p>
 
-            <div class="topic-number">02</div>
+  <div class="highlight">
+    The question is no longer whether a school needs a website.
+    The real question is: What do parents see when they search for your school online?
+  </div>
 
-            <h3>School Branding</h3>
 
-            <p>
-              Creating a recognisable identity without
-              losing the character of the institution.
-            </p>
+  <h2>The Bottom Line</h2>
 
-          </div>
+  <p>
+    In 2026, a professional school website is not simply a digital brochure.
+    It is a platform for communication, trust, branding, admissions, and growth.
+  </p>
 
+  <p>
+    A well-designed website helps schools tell their story, showcase their achievements,
+    connect with parents, and create a strong first impression.
+  </p>
 
-          <div class="topic">
+  <p>
+    Because in a digital-first world, your school's online presence is often the beginning
+    of your relationship with every new parent.
+  </p>
 
-            <div class="topic-number">03</div>
+  <div class="highlight">
+    And that first impression matters.
+  </div>
 
-            <h3>Digital Marketing</h3>
+</article>
 
-            <p>
-              Using digital channels with purpose instead
-              of simply producing more content.
-            </p>
 
-          </div>
+<section class="cta">
 
+  <h2>Is Your School Ready for the Digital-First Future?</h2>
 
-          <div class="topic">
+  <p>
+    BrandiVa Digital helps schools build meaningful digital identities through
+    professional websites, storytelling, branding and digital growth strategies.
+  </p>
 
-            <div class="topic-number">04</div>
+  <a href="contact.html">Let's Talk About Your School</a>
 
-            <h3>Admissions & Growth</h3>
+</section>
 
-            <p>
-              Understanding the journey from discovery
-              to enquiry and eventually to choice.
-            </p>
 
-          </div>
+<footer>
 
+  <p>
+    © 2026 BrandiVa Digital · Digital Storytelling & Growth for Schools
+  </p>
 
-          <div class="topic">
+  <p style="margin-top:8px;">
+    <a href="mailto:help@brandivadigital.com">help@brandivadigital.com</a>
+  </p>
 
-            <div class="topic-number">05</div>
-
-            <h3>Parent Communication</h3>
-
-            <p>
-              Making school communication clearer,
-              more useful and more human.
-            </p>
-
-          </div>
-
-
-        </div>
-
-      </div>
-
-    </section>
-
-
-
-    <!-- POINT OF VIEW -->
-
-    <section class="blog-point">
-
-      <div class="blog-container">
-
-        <div class="blog-label">
-          03 — Our Point of View
-        </div>
-
-        <h2>
-          Don't market a school
-          before understanding it.
-        </h2>
-
-        <p>
-          The strongest school communication doesn't invent
-          a story. It discovers the one that already exists —
-          and gives that story a clearer digital voice.
-        </p>
-
-      </div>
-
-    </section>
-
-
-
-    <!-- COMING -->
-
-    <section class="blog-coming">
-
-      <div class="blog-container">
-
-        <div class="blog-coming-grid">
-
-          <h2>
-            More ideas.
-            More questions.
-            More conversations.
-          </h2>
-
-
-          <div class="blog-coming-copy">
-
-            <p>
-              We're building this journal around the real
-              questions schools face as their digital presence
-              becomes increasingly important.
-            </p>
-
-            <p>
-              New articles will explore websites, branding,
-              content, social media, admissions marketing and
-              the changing way parents discover schools.
-            </p>
-
-          </div>
-
-        </div>
-
-      </div>
-
-    </section>
-
-
-
-    <!-- CTA -->
-
-    <section class="blog-cta">
-
-      <div class="blog-container">
-
-        <small>
-          Have a question about your school's digital presence?
-        </small>
-
-        <h2>
-          Let's talk about
-          what comes next.
-        </h2>
-
-        <a href="contact.html" class="blog-cta-button">
-          Start a Conversation
-          <span>→</span>
-        </a>
-
-      </div>
-
-    </section>
-
-
-  </main>
-
-
-  <script src="header.js"></script>
-  <script src="footer.js"></script>
+</footer>
 
 </body>
-
 </html>
