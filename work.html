@@ -1,4 +1,869 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Our Work | BrandiVa Digital</title><meta name="description" content="Explore BrandiVa Digital projects in websites, branding and education-focused digital presence."><link rel="stylesheet" href="style.css"></head><body><script src="header.js"></script><main>
-<section class="pagehero visual work-hero"><div class="container"><div class="eyebrow">Our Work</div><h1>Every project begins with understanding what needs to be represented.</h1><p class="lead">Our portfolio is growing. Each project is approached as a different story—not a recycled template.</p></div></section>
-<section class="section"><div class="container"><div class="work"><div class="workshot" style="background-image:url('https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1400&q=90')"></div><div><div class="kicker">Featured Direction</div><h2>Education-focused digital experiences.</h2><p class="lead">As BrandiVa expands its work with schools and institutions, this space will feature detailed website, branding and communication case studies.</p><div class="note">Have a project you'd like to discuss? Your story could become our next case study.</div></div></div></div></section>
-<section class="photo-band"><div class="photo-grid"><div class="photo" style="background-image:url('https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=1500&q=90')"><div class="photo-caption">Ideas become more meaningful when they are built around real people.</div></div><div class="photo" style="background-image:url('https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&w=900&q=90')"></div><div class="photo" style="background-image:url('https://images.unsplash.com/photo-1497486751825-1233686d5d80?auto=format&fit=crop&w=900&q=90')"></div></div></section></main><script src="footer.js"></script></body></html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Our Work | BrandiVa Digital — Digital Growth for Schools</title>
+
+  <meta name="description"
+    content="Explore how BrandiVa Digital builds websites, brands, content and digital growth systems for schools and educational institutions.">
+
+  <meta name="keywords"
+    content="school website design, school branding, school digital marketing, education marketing, school social media, digital marketing for schools, BrandiVa Digital">
+
+  <meta name="author" content="BrandiVa Digital">
+  <meta name="robots" content="index, follow">
+
+  <link rel="canonical" href="https://brandivadigital.com/work.html">
+
+  <meta property="og:title"
+    content="Our Work | BrandiVa Digital">
+
+  <meta property="og:description"
+    content="Digital experiences, stories and growth systems built for schools and institutions.">
+
+  <meta property="og:type" content="website">
+
+  <meta property="og:url"
+    content="https://brandivadigital.com/work.html">
+
+  <link rel="stylesheet" href="style.css">
+
+
+  <style>
+
+    :root {
+      --work-bg: #f4f0e7;
+      --work-paper: #faf9f5;
+      --work-dark: #17232a;
+      --work-muted: #69747a;
+      --work-line: rgba(23,35,42,.16);
+    }
+
+    body {
+      margin: 0;
+      background: var(--work-bg);
+      color: var(--work-dark);
+    }
+
+    .work-page {
+      overflow: hidden;
+    }
+
+    .work-container {
+      width: min(1180px, calc(100% - 48px));
+      margin: 0 auto;
+    }
+
+    .work-label {
+      font-size: 12px;
+      letter-spacing: .16em;
+      text-transform: uppercase;
+      color: var(--work-muted);
+      font-weight: 600;
+    }
+
+
+    /* HERO */
+
+    .work-hero {
+      min-height: calc(100vh - 78px);
+      display: flex;
+      align-items: center;
+      padding: 90px 0 120px;
+    }
+
+    .work-hero-grid {
+      display: grid;
+      grid-template-columns: 1fr 300px;
+      gap: 90px;
+      align-items: end;
+    }
+
+    .work-hero h1 {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(65px, 9vw, 135px);
+      line-height: .87;
+      letter-spacing: -.06em;
+      font-weight: 500;
+      margin: 38px 0 0;
+      max-width: 1000px;
+    }
+
+    .work-hero-copy {
+      padding-bottom: 12px;
+    }
+
+    .work-hero-copy p {
+      font-size: 18px;
+      line-height: 1.7;
+      color: var(--work-muted);
+      margin: 0;
+    }
+
+
+    /* INTRO */
+
+    .work-intro {
+      background: var(--work-paper);
+      padding: 150px 0;
+    }
+
+    .work-intro-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 110px;
+    }
+
+    .work-intro h2 {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(52px, 6vw, 88px);
+      line-height: .94;
+      letter-spacing: -.055em;
+      font-weight: 500;
+      margin: 55px 0 0;
+    }
+
+    .work-intro-copy {
+      padding-top: 55px;
+    }
+
+    .work-intro-copy p {
+      font-size: 20px;
+      line-height: 1.75;
+      color: var(--work-muted);
+      margin: 0 0 30px;
+    }
+
+
+    /* WORK SYSTEM */
+
+    .work-system {
+      padding: 160px 0;
+    }
+
+    .work-system h2 {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(52px, 7vw, 100px);
+      line-height: .92;
+      letter-spacing: -.06em;
+      font-weight: 500;
+      max-width: 950px;
+      margin: 55px 0 100px;
+    }
+
+    .work-stage {
+      border-top: 1px solid var(--work-line);
+    }
+
+    .work-stage-item {
+      display: grid;
+      grid-template-columns: 90px 280px 1fr;
+      gap: 30px;
+      padding: 42px 0;
+      border-bottom: 1px solid var(--work-line);
+    }
+
+    .work-stage-number {
+      font-size: 12px;
+      color: var(--work-muted);
+    }
+
+    .work-stage-title {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 38px;
+      line-height: 1;
+      font-weight: 500;
+    }
+
+    .work-stage-content p {
+      color: var(--work-muted);
+      font-size: 17px;
+      line-height: 1.7;
+      margin: 0 0 22px;
+      max-width: 550px;
+    }
+
+    .work-stage-content ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .work-stage-content li {
+      border: 1px solid var(--work-line);
+      padding: 9px 13px;
+      font-size: 13px;
+      color: var(--work-muted);
+    }
+
+
+    /* PROJECT TYPES */
+
+    .work-projects {
+      background: var(--work-dark);
+      color: white;
+      padding: 150px 0;
+    }
+
+    .work-projects .work-label {
+      color: rgba(255,255,255,.5);
+    }
+
+    .work-projects h2 {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(52px, 7vw, 100px);
+      line-height: .92;
+      letter-spacing: -.06em;
+      font-weight: 500;
+      max-width: 1000px;
+      margin: 55px 0 100px;
+    }
+
+    .project-list {
+      border-top: 1px solid rgba(255,255,255,.2);
+    }
+
+    .project-item {
+      display: grid;
+      grid-template-columns: 90px 1fr 260px;
+      gap: 30px;
+      padding: 38px 0;
+      border-bottom: 1px solid rgba(255,255,255,.2);
+      align-items: start;
+    }
+
+    .project-number {
+      font-size: 12px;
+      color: rgba(255,255,255,.45);
+    }
+
+    .project-item h3 {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 34px;
+      font-weight: 500;
+      line-height: 1;
+      margin: 0;
+    }
+
+    .project-item p {
+      color: rgba(255,255,255,.58);
+      font-size: 15px;
+      line-height: 1.7;
+      margin: 0;
+    }
+
+
+    /* PHILOSOPHY */
+
+    .work-philosophy {
+      padding: 170px 0;
+      background: var(--work-paper);
+      text-align: center;
+    }
+
+    .work-philosophy h2 {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(52px, 7vw, 105px);
+      line-height: .92;
+      letter-spacing: -.06em;
+      font-weight: 500;
+      max-width: 1000px;
+      margin: 45px auto 0;
+    }
+
+    .work-philosophy p {
+      max-width: 680px;
+      margin: 45px auto 0;
+      color: var(--work-muted);
+      font-size: 19px;
+      line-height: 1.75;
+    }
+
+
+    /* FUTURE WORK */
+
+    .work-future {
+      padding: 150px 0;
+    }
+
+    .work-future-grid {
+      display: grid;
+      grid-template-columns: .8fr 1.2fr;
+      gap: 100px;
+    }
+
+    .work-future h2 {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(50px, 6vw, 88px);
+      line-height: .94;
+      letter-spacing: -.055em;
+      font-weight: 500;
+      margin: 0;
+    }
+
+    .work-future-copy p {
+      font-size: 19px;
+      line-height: 1.75;
+      color: var(--work-muted);
+      margin: 0 0 30px;
+    }
+
+
+    /* CTA */
+
+    .work-cta {
+      padding: 180px 0;
+      text-align: center;
+      background: var(--work-bg);
+    }
+
+    .work-cta small {
+      display: block;
+      font-size: 12px;
+      letter-spacing: .16em;
+      text-transform: uppercase;
+      color: var(--work-muted);
+      margin-bottom: 40px;
+    }
+
+    .work-cta h2 {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(55px, 8vw, 120px);
+      line-height: .9;
+      letter-spacing: -.06em;
+      font-weight: 500;
+      max-width: 1050px;
+      margin: 0 auto 50px;
+    }
+
+    .work-cta-button {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      background: var(--work-dark);
+      color: white;
+      text-decoration: none;
+      padding: 17px 26px;
+      font-size: 14px;
+      font-weight: 600;
+    }
+
+
+    /* MOBILE */
+
+    @media (max-width: 850px) {
+
+      .work-container {
+        width: min(100% - 34px, 700px);
+      }
+
+      .work-hero {
+        min-height: auto;
+        padding: 80px 0 100px;
+      }
+
+      .work-hero-grid,
+      .work-intro-grid,
+      .work-future-grid {
+        grid-template-columns: 1fr;
+        gap: 50px;
+      }
+
+      .work-hero h1 {
+        font-size: clamp(58px, 16vw, 100px);
+      }
+
+      .work-intro,
+      .work-system,
+      .work-projects,
+      .work-future {
+        padding: 100px 0;
+      }
+
+      .work-intro h2,
+      .work-system h2,
+      .work-projects h2,
+      .work-philosophy h2,
+      .work-future h2 {
+        font-size: clamp(48px, 13vw, 78px);
+      }
+
+      .work-intro-copy {
+        padding-top: 0;
+      }
+
+      .work-stage-item {
+        grid-template-columns: 45px 1fr;
+        gap: 20px;
+      }
+
+      .work-stage-content {
+        grid-column: 2;
+      }
+
+      .project-item {
+        grid-template-columns: 45px 1fr;
+        gap: 20px;
+      }
+
+      .project-item p {
+        grid-column: 2;
+      }
+
+      .work-cta {
+        padding: 120px 0;
+      }
+
+    }
+
+  </style>
+
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "name": "Our Work — BrandiVa Digital",
+    "url": "https://brandivadigital.com/work.html",
+    "description": "Digital websites, branding, content and growth systems created by BrandiVa Digital for schools and educational institutions."
+  }
+  </script>
+
+</head>
+
+
+<body>
+
+  <div id="header"></div>
+
+
+  <main class="work-page">
+
+
+    <!-- HERO -->
+
+    <section class="work-hero">
+
+      <div class="work-container">
+
+        <div class="work-hero-grid">
+
+          <div>
+
+            <div class="work-label">
+              Our Work
+            </div>
+
+            <h1>
+              We build<br>
+              digital presence<br>
+              with purpose.
+            </h1>
+
+          </div>
+
+
+          <div class="work-hero-copy">
+
+            <p>
+              Websites, stories, brands and growth systems —
+              designed to help good institutions become easier
+              to discover, remember and choose.
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- INTRO -->
+
+    <section class="work-intro">
+
+      <div class="work-container">
+
+        <div class="work-label">
+          01 — The Work
+        </div>
+
+        <div class="work-intro-grid">
+
+          <h2>
+            We don't make
+            things just to
+            look good.
+          </h2>
+
+
+          <div class="work-intro-copy">
+
+            <p>
+              Every piece of work has a job to do.
+            </p>
+
+            <p>
+              A website should make a school easier
+              to understand. A brand should make it
+              easier to remember. Content should make
+              its people and achievements visible.
+            </p>
+
+            <p>
+              And marketing should turn that attention
+              into meaningful conversations.
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- SYSTEM -->
+
+    <section class="work-system">
+
+      <div class="work-container">
+
+        <div class="work-label">
+          02 — What We Build
+        </div>
+
+        <h2>
+          One digital journey.
+          Three moments that matter.
+        </h2>
+
+
+        <div class="work-stage">
+
+
+          <!-- BE SEEN -->
+
+          <div class="work-stage-item">
+
+            <div class="work-stage-number">
+              01
+            </div>
+
+            <div class="work-stage-title">
+              Be Seen
+            </div>
+
+            <div class="work-stage-content">
+
+              <p>
+                We build the digital foundation that
+                helps parents discover your school and
+                understand what you offer.
+              </p>
+
+              <ul>
+                <li>School Websites</li>
+                <li>Landing Pages</li>
+                <li>SEO Foundation</li>
+                <li>Google Business Profile</li>
+                <li>Analytics</li>
+              </ul>
+
+            </div>
+
+          </div>
+
+
+          <!-- BE REMEMBERED -->
+
+          <div class="work-stage-item">
+
+            <div class="work-stage-number">
+              02
+            </div>
+
+            <div class="work-stage-title">
+              Be Remembered
+            </div>
+
+            <div class="work-stage-content">
+
+              <p>
+                We turn your school's real strengths,
+                stories and identity into communication
+                people can connect with and remember.
+              </p>
+
+              <ul>
+                <li>Brand Strategy</li>
+                <li>Story Discovery</li>
+                <li>Content</li>
+                <li>Social Media</li>
+                <li>Photography</li>
+              </ul>
+
+            </div>
+
+          </div>
+
+
+          <!-- BE CHOSEN -->
+
+          <div class="work-stage-item">
+
+            <div class="work-stage-number">
+              03
+            </div>
+
+            <div class="work-stage-title">
+              Be Chosen
+            </div>
+
+            <div class="work-stage-content">
+
+              <p>
+                We create campaigns and conversion systems
+                that help turn digital attention into genuine
+                admission enquiries.
+              </p>
+
+              <ul>
+                <li>Meta Ads</li>
+                <li>Google Ads</li>
+                <li>Lead Generation</li>
+                <li>Lead Nurturing</li>
+                <li>Conversion Tracking</li>
+              </ul>
+
+            </div>
+
+          </div>
+
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- PROJECT TYPES -->
+
+    <section class="work-projects">
+
+      <div class="work-container">
+
+        <div class="work-label">
+          03 — Projects We Create
+        </div>
+
+        <h2>
+          From the first impression
+          to the final enquiry.
+        </h2>
+
+
+        <div class="project-list">
+
+
+          <div class="project-item">
+
+            <div class="project-number">
+              01
+            </div>
+
+            <h3>
+              School Websites
+            </h3>
+
+            <p>
+              Digital homes that communicate a school's
+              identity, strengths, culture and admissions
+              journey clearly.
+            </p>
+
+          </div>
+
+
+          <div class="project-item">
+
+            <div class="project-number">
+              02
+            </div>
+
+            <h3>
+              Brand & Identity
+            </h3>
+
+            <p>
+              Visual and verbal systems that make a school
+              recognisable and consistent across platforms.
+            </p>
+
+          </div>
+
+
+          <div class="project-item">
+
+            <div class="project-number">
+              03
+            </div>
+
+            <h3>
+              Content & Storytelling
+            </h3>
+
+            <p>
+              Stories that bring teachers, students,
+              achievements and school life into the
+              digital conversation.
+            </p>
+
+          </div>
+
+
+          <div class="project-item">
+
+            <div class="project-number">
+              04
+            </div>
+
+            <h3>
+              Digital Campaigns
+            </h3>
+
+            <p>
+              Targeted campaigns designed around visibility,
+              enquiries and measurable growth.
+            </p>
+
+          </div>
+
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- PHILOSOPHY -->
+
+    <section class="work-philosophy">
+
+      <div class="work-container">
+
+        <div class="work-label">
+          04 — Our Standard
+        </div>
+
+        <h2>
+          The work should
+          feel like you.
+        </h2>
+
+        <p>
+          We don't believe every school should look the same.
+          The goal isn't to impose a style. It's to understand
+          what makes an institution distinctive and build a
+          digital presence around that truth.
+        </p>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- FUTURE WORK -->
+
+    <section class="work-future">
+
+      <div class="work-container">
+
+        <div class="work-future-grid">
+
+          <h2>
+            The best work
+            is work that grows.
+          </h2>
+
+
+          <div class="work-future-copy">
+
+            <p>
+              Our goal isn't to hand over a website,
+              schedule a few posts and disappear.
+            </p>
+
+            <p>
+              We want every project to become a stronger
+              foundation for what comes next — better
+              visibility, clearer communication, stronger
+              trust and eventually, sustainable growth.
+            </p>
+
+            <p>
+              That's why we think in systems, not isolated
+              deliverables.
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- CTA -->
+
+    <section class="work-cta">
+
+      <div class="work-container">
+
+        <small>
+          Have a school to build?
+        </small>
+
+        <h2>
+          Let's create something
+          worth being seen.
+        </h2>
+
+        <a href="contact.html" class="work-cta-button">
+          Start a Conversation
+          <span>→</span>
+        </a>
+
+      </div>
+
+    </section>
+
+
+  </main>
+
+
+  <script src="header.js"></script>
+  <script src="footer.js"></script>
+
+</body>
+
+</html>
