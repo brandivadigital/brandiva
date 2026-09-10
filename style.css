@@ -933,14 +933,16 @@ a{
   }
 
 }
+/* DESKTOP HERO FIX */
 @media (min-width: 801px){
 
   .hero{
     display:grid;
-    grid-template-columns: 48% 52%;
-    gap:0;
+    grid-template-columns: 50% 50%;
+    width:100%;
     max-width:none;
     padding:0;
+    margin:0;
     min-height:calc(100vh - 80px);
   }
 
@@ -952,10 +954,14 @@ a{
   }
 
   .hero-img{
-    min-height:calc(100vh - 80px);
+    display:block;
     width:100%;
+    min-height:calc(100vh - 80px);
+
+    background-image:url("hero%20section.jpg");
     background-size:cover;
     background-position:center;
+    background-repeat:no-repeat;
   }
 
 }
