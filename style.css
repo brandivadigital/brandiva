@@ -933,3 +933,29 @@ a{
   }
 
 }
+@media (min-width: 801px){
+
+  .hero{
+    display:grid;
+    grid-template-columns: 48% 52%;
+    gap:0;
+    max-width:none;
+    padding:0;
+    min-height:calc(100vh - 80px);
+  }
+
+  .hero-copy{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    padding:80px 7vw;
+  }
+
+  .hero-img{
+    min-height:calc(100vh - 80px);
+    width:100%;
+    background-size:cover;
+    background-position:center;
+  }
+
+}
