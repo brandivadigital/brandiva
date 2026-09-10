@@ -1,0 +1,1216 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Free School Digital Growth Audit | BrandiVa</title>
+
+  <meta
+    name="description"
+    content="Find out what parents see when they search for your school. Get a free School Digital Growth Audit from BrandiVa."
+  >
+
+  <style>
+
+    :root{
+      --navy:#102b35;
+      --deep:#0b2028;
+      --cream:#f7f3eb;
+      --gold:#d7b77a;
+      --text:#20333a;
+      --muted:#64757a;
+      --white:#ffffff;
+      --line:#dfe4e2;
+      --green:#198754;
+    }
+
+    *{
+      box-sizing:border-box;
+    }
+
+    html{
+      scroll-behavior:smooth;
+    }
+
+    body{
+      margin:0;
+      font-family:Arial, Helvetica, sans-serif;
+      color:var(--text);
+      background:var(--cream);
+      line-height:1.7;
+    }
+
+    a{
+      text-decoration:none;
+      color:inherit;
+    }
+
+    .container{
+      width:min(1120px,92%);
+      margin:auto;
+    }
+
+    /* TOP BAR */
+
+    .topbar{
+      background:var(--deep);
+      color:#fff;
+      text-align:center;
+      padding:10px 15px;
+      font-size:13px;
+      letter-spacing:.3px;
+    }
+
+    /* LOGO */
+
+    .brand{
+      padding:25px 0;
+      text-align:center;
+      background:var(--cream);
+    }
+
+    .logo{
+      font-size:25px;
+      font-weight:800;
+      letter-spacing:2px;
+      color:var(--navy);
+    }
+
+    .logo span{
+      color:#b08b4f;
+    }
+
+    /* HERO */
+
+    .hero{
+      background:var(--cream);
+      padding:65px 0 75px;
+    }
+
+    .hero-inner{
+      display:grid;
+      grid-template-columns:1.05fr .95fr;
+      gap:70px;
+      align-items:center;
+    }
+
+    .eyebrow{
+      display:inline-block;
+      font-size:12px;
+      font-weight:700;
+      letter-spacing:2px;
+      text-transform:uppercase;
+      color:#9a7840;
+      margin-bottom:18px;
+    }
+
+    h1{
+      font-family:Georgia, "Times New Roman", serif;
+      font-size:58px;
+      line-height:1.08;
+      font-weight:400;
+      color:var(--navy);
+      margin:0 0 25px;
+    }
+
+    h1 strong{
+      font-weight:700;
+    }
+
+    .hero-text{
+      font-size:19px;
+      color:var(--muted);
+      max-width:650px;
+      margin-bottom:30px;
+    }
+
+    .hero-note{
+      font-size:13px;
+      color:#718085;
+      margin-top:14px;
+    }
+
+    .btn{
+      display:inline-block;
+      background:var(--navy);
+      color:#fff;
+      padding:16px 27px;
+      border-radius:3px;
+      font-weight:700;
+      font-size:15px;
+      transition:.2s ease;
+    }
+
+    .btn:hover{
+      transform:translateY(-2px);
+      opacity:.93;
+    }
+
+    /* HERO CARD */
+
+    .audit-card{
+      background:#fff;
+      padding:38px;
+      box-shadow:0 20px 55px rgba(16,43,53,.12);
+      border:1px solid rgba(16,43,53,.08);
+    }
+
+    .audit-card h3{
+      font-family:Georgia, "Times New Roman", serif;
+      font-size:28px;
+      line-height:1.2;
+      color:var(--navy);
+      margin:0 0 12px;
+    }
+
+    .audit-card p{
+      color:var(--muted);
+      margin:0 0 25px;
+      font-size:15px;
+    }
+
+    .audit-list{
+      list-style:none;
+      padding:0;
+      margin:0;
+    }
+
+    .audit-list li{
+      padding:13px 0;
+      border-bottom:1px solid var(--line);
+      font-size:14px;
+    }
+
+    .audit-list li:last-child{
+      border-bottom:0;
+    }
+
+    .check{
+      color:var(--green);
+      font-weight:bold;
+      margin-right:8px;
+    }
+
+    /* SECTION */
+
+    .section{
+      padding:90px 0;
+    }
+
+    .section.white{
+      background:#fff;
+    }
+
+    .section.dark{
+      background:var(--navy);
+      color:#fff;
+    }
+
+    .kicker{
+      font-size:12px;
+      font-weight:700;
+      letter-spacing:2px;
+      text-transform:uppercase;
+      color:#a98448;
+      margin-bottom:15px;
+    }
+
+    .dark .kicker{
+      color:var(--gold);
+    }
+
+    h2{
+      font-family:Georgia, "Times New Roman", serif;
+      font-size:45px;
+      line-height:1.15;
+      font-weight:400;
+      color:var(--navy);
+      margin:0 0 25px;
+    }
+
+    .dark h2{
+      color:#fff;
+    }
+
+    .lead{
+      font-size:19px;
+      color:var(--muted);
+      max-width:760px;
+    }
+
+    .dark .lead{
+      color:#c3d0d2;
+    }
+
+    /* JOURNEY */
+
+    .journey{
+      display:grid;
+      grid-template-columns:repeat(5,1fr);
+      margin-top:55px;
+      border-top:1px solid var(--line);
+      border-bottom:1px solid var(--line);
+    }
+
+    .journey-item{
+      padding:28px 20px;
+      border-right:1px solid var(--line);
+      text-align:center;
+    }
+
+    .journey-item:last-child{
+      border-right:0;
+    }
+
+    .journey-number{
+      font-size:12px;
+      color:#a98448;
+      font-weight:bold;
+      margin-bottom:8px;
+    }
+
+    .journey-item h3{
+      font-family:Georgia, "Times New Roman", serif;
+      font-size:19px;
+      margin:0;
+      color:var(--navy);
+    }
+
+    /* AUDIT AREAS */
+
+    .audit-grid{
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      gap:20px;
+      margin-top:50px;
+    }
+
+    .audit-box{
+      background:#fff;
+      padding:30px;
+      border:1px solid var(--line);
+    }
+
+    .audit-box .number{
+      font-size:12px;
+      font-weight:bold;
+      color:#a98448;
+      letter-spacing:1px;
+    }
+
+    .audit-box h3{
+      font-family:Georgia, "Times New Roman", serif;
+      font-size:24px;
+      color:var(--navy);
+      margin:10px 0 8px;
+    }
+
+    .audit-box p{
+      color:var(--muted);
+      font-size:15px;
+      margin:0;
+    }
+
+    /* RESULTS */
+
+    .result-grid{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:55px;
+      align-items:center;
+    }
+
+    .result-list{
+      margin:30px 0 0;
+      padding:0;
+      list-style:none;
+    }
+
+    .result-list li{
+      padding:16px 0;
+      border-bottom:1px solid #2d4953;
+      color:#d4dfe1;
+    }
+
+    .result-list li strong{
+      color:#fff;
+    }
+
+    .quote{
+      background:#fff;
+      padding:45px;
+      color:var(--navy);
+    }
+
+    .quote p{
+      font-family:Georgia, "Times New Roman", serif;
+      font-size:29px;
+      line-height:1.35;
+      margin:0;
+    }
+
+    .quote small{
+      display:block;
+      margin-top:25px;
+      color:var(--muted);
+      font-family:Arial, sans-serif;
+      font-size:13px;
+    }
+
+    /* BRANDIVA */
+
+    .brandiva{
+      text-align:center;
+      max-width:850px;
+      margin:auto;
+    }
+
+    .brandiva h2{
+      margin-bottom:20px;
+    }
+
+    .system{
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      gap:20px;
+      margin-top:50px;
+    }
+
+    .system-box{
+      padding:32px;
+      border:1px solid #dce2df;
+      background:#faf9f5;
+    }
+
+    .system-box span{
+      font-size:12px;
+      color:#a98448;
+      font-weight:bold;
+    }
+
+    .system-box h3{
+      font-family:Georgia, "Times New Roman", serif;
+      font-size:27px;
+      color:var(--navy);
+      margin:10px 0;
+    }
+
+    .system-box p{
+      color:var(--muted);
+      font-size:15px;
+      margin:0;
+    }
+
+    /* FORM */
+
+    .form-section{
+      background:#fff;
+      padding:95px 0;
+    }
+
+    .form-wrap{
+      max-width:850px;
+      margin:auto;
+    }
+
+    .form-heading{
+      text-align:center;
+      margin-bottom:45px;
+    }
+
+    .form-heading h2{
+      margin-bottom:15px;
+    }
+
+    .form-heading p{
+      color:var(--muted);
+      font-size:17px;
+    }
+
+    form{
+      background:#f8f6f1;
+      padding:40px;
+      border:1px solid var(--line);
+    }
+
+    .field{
+      margin-bottom:22px;
+    }
+
+    label{
+      display:block;
+      font-size:13px;
+      font-weight:700;
+      margin-bottom:7px;
+      color:var(--navy);
+    }
+
+    input,
+    select{
+      width:100%;
+      padding:15px;
+      border:1px solid #cfd7d4;
+      background:#fff;
+      font-size:15px;
+      font-family:Arial, Helvetica, sans-serif;
+      outline:none;
+    }
+
+    input:focus,
+    select:focus{
+      border-color:var(--navy);
+    }
+
+    .form-row{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:20px;
+    }
+
+    .submit{
+      width:100%;
+      border:0;
+      cursor:pointer;
+      margin-top:5px;
+      font-size:16px;
+    }
+
+    .privacy{
+      text-align:center;
+      font-size:12px;
+      color:#7a878b;
+      margin-top:14px;
+    }
+
+    /* FINAL CTA */
+
+    .final{
+      background:var(--deep);
+      color:#fff;
+      text-align:center;
+      padding:90px 0;
+    }
+
+    .final h2{
+      color:#fff;
+      max-width:800px;
+      margin:0 auto 20px;
+    }
+
+    .final p{
+      color:#c4d0d2;
+      max-width:650px;
+      margin:0 auto 30px;
+      font-size:18px;
+    }
+
+    .btn-light{
+      background:#fff;
+      color:var(--navy);
+    }
+
+    /* FOOTER */
+
+    footer{
+      background:#07171d;
+      color:#91a3a7;
+      text-align:center;
+      padding:28px 15px;
+      font-size:12px;
+    }
+
+    footer strong{
+      color:#fff;
+    }
+
+    /* MOBILE */
+
+    @media(max-width:800px){
+
+      .hero{
+        padding:45px 0 55px;
+      }
+
+      .hero-inner{
+        grid-template-columns:1fr;
+        gap:40px;
+      }
+
+      h1{
+        font-size:42px;
+      }
+
+      h2{
+        font-size:35px;
+      }
+
+      .hero-text{
+        font-size:17px;
+      }
+
+      .audit-card{
+        padding:28px;
+      }
+
+      .section,
+      .form-section{
+        padding:65px 0;
+      }
+
+      .journey{
+        grid-template-columns:1fr;
+      }
+
+      .journey-item{
+        border-right:0;
+        border-bottom:1px solid var(--line);
+      }
+
+      .journey-item:last-child{
+        border-bottom:0;
+      }
+
+      .audit-grid{
+        grid-template-columns:1fr;
+      }
+
+      .result-grid{
+        grid-template-columns:1fr;
+        gap:35px;
+      }
+
+      .system{
+        grid-template-columns:1fr;
+      }
+
+      .form-row{
+        grid-template-columns:1fr;
+        gap:0;
+      }
+
+      form{
+        padding:25px;
+      }
+
+      .brand{
+        padding:20px 0;
+      }
+
+    }
+
+  </style>
+</head>
+
+
+<body>
+
+  <div class="topbar">
+    FREE SCHOOL DIGITAL GROWTH AUDIT · LIMITED MONTHLY SLOTS
+  </div>
+
+
+  <div class="brand">
+    <div class="logo">
+      BRANDI<span>VA</span>
+    </div>
+  </div>
+
+
+  <!-- HERO -->
+
+  <section class="hero">
+
+    <div class="container hero-inner">
+
+      <div>
+
+        <div class="eyebrow">
+          For Schools & Educational Institutions
+        </div>
+
+        <h1>
+          Your school may be doing everything right.
+          <br>
+          <strong>But are parents seeing it?</strong>
+        </h1>
+
+        <p class="hero-text">
+          Your teachers, students, achievements and values are building
+          something valuable. But today, a parent's first impression
+          often happens online — before they ever visit your campus.
+        </p>
+
+        <a href="#audit-form" class="btn">
+          Get My Free School Audit →
+        </a>
+
+        <div class="hero-note">
+          Free audit · No obligation · No complicated sales pitch
+        </div>
+
+      </div>
+
+
+      <div class="audit-card">
+
+        <h3>
+          What do parents see when they search for your school?
+        </h3>
+
+        <p>
+          We'll take an honest look at the public digital presence
+          of your school.
+        </p>
+
+        <ul class="audit-list">
+
+          <li>
+            <span class="check">✓</span>
+            How your school appears in search
+          </li>
+
+          <li>
+            <span class="check">✓</span>
+            Your website & first impression
+          </li>
+
+          <li>
+            <span class="check">✓</span>
+            Your social media presence
+          </li>
+
+          <li>
+            <span class="check">✓</span>
+            Your school's story & communication
+          </li>
+
+          <li>
+            <span class="check">✓</span>
+            The parent journey from discovery to enquiry
+          </li>
+
+        </ul>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- PARENT JOURNEY -->
+
+  <section class="section white">
+
+    <div class="container">
+
+      <div class="kicker">
+        BEFORE A PARENT VISITS
+      </div>
+
+      <h2>
+        Your school is being evaluated
+        <br>
+        before you meet the parent.
+      </h2>
+
+      <p class="lead">
+        A parent may never tell you why they chose another school.
+        But their journey often starts with what they discover online.
+      </p>
+
+
+      <div class="journey">
+
+        <div class="journey-item">
+          <div class="journey-number">01</div>
+          <h3>Google</h3>
+        </div>
+
+        <div class="journey-item">
+          <div class="journey-number">02</div>
+          <h3>Website</h3>
+        </div>
+
+        <div class="journey-item">
+          <div class="journey-number">03</div>
+          <h3>Social</h3>
+        </div>
+
+        <div class="journey-item">
+          <div class="journey-number">04</div>
+          <h3>Compare</h3>
+        </div>
+
+        <div class="journey-item">
+          <div class="journey-number">05</div>
+          <h3>Choose</h3>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- AUDIT -->
+
+  <section class="section">
+
+    <div class="container">
+
+      <div class="kicker">
+        YOUR FREE AUDIT
+      </div>
+
+      <h2>
+        We'll look at the six things
+        <br>
+        parents experience first.
+      </h2>
+
+      <div class="audit-grid">
+
+        <div class="audit-box">
+          <div class="number">01</div>
+          <h3>Discoverability</h3>
+          <p>
+            Can parents easily find your school when they're searching?
+          </p>
+        </div>
+
+        <div class="audit-box">
+          <div class="number">02</div>
+          <h3>Website</h3>
+          <p>
+            Does your website clearly communicate why your school matters?
+          </p>
+        </div>
+
+        <div class="audit-box">
+          <div class="number">03</div>
+          <h3>First Impression</h3>
+          <p>
+            Does your digital presence reflect the quality you've built?
+          </p>
+        </div>
+
+        <div class="audit-box">
+          <div class="number">04</div>
+          <h3>Story & Content</h3>
+          <p>
+            Are your school's real strengths being communicated?
+          </p>
+        </div>
+
+        <div class="audit-box">
+          <div class="number">05</div>
+          <h3>Social Presence</h3>
+          <p>
+            Does your social presence create interest and trust?
+          </p>
+        </div>
+
+        <div class="audit-box">
+          <div class="number">06</div>
+          <h3>Parent Journey</h3>
+          <p>
+            Can an interested parent easily take the next step?
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- WHAT THEY GET -->
+
+  <section class="section dark">
+
+    <div class="container result-grid">
+
+      <div>
+
+        <div class="kicker">
+          WHAT YOU'LL GET
+        </div>
+
+        <h2>
+          Not another generic
+          marketing report.
+        </h2>
+
+        <p class="lead">
+          We'll give you a clear picture of where your school
+          stands online and where the biggest opportunities may be.
+        </p>
+
+        <ul class="result-list">
+
+          <li>
+            <strong>Your strengths</strong> — what's already working
+          </li>
+
+          <li>
+            <strong>Visibility gaps</strong> — where you may be overlooked
+          </li>
+
+          <li>
+            <strong>Communication gaps</strong> — what parents may not understand
+          </li>
+
+          <li>
+            <strong>Missed opportunities</strong> — what could be improved
+          </li>
+
+          <li>
+            <strong>Practical recommendations</strong> — what we'd do next
+          </li>
+
+        </ul>
+
+      </div>
+
+
+      <div class="quote">
+
+        <p>
+          “Your school is more than what shows up on Google.”
+        </p>
+
+        <small>
+          BrandiVa · School Growth & Communication Partner
+        </small>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- BRANDIVA -->
+
+  <section class="section white">
+
+    <div class="container brandiva">
+
+      <div class="kicker">
+        WHY BRANDIVA
+      </div>
+
+      <h2>
+        Every school has a story worth hearing.
+      </h2>
+
+      <p class="lead" style="margin:0 auto">
+        We don't create content about your school.
+        We uncover the story already living inside it —
+        and help communicate it to the people who matter.
+      </p>
+
+
+      <div class="system">
+
+        <div class="system-box">
+
+          <span>01</span>
+
+          <h3>Be Seen</h3>
+
+          <p>
+            Help parents discover and understand your school.
+          </p>
+
+        </div>
+
+
+        <div class="system-box">
+
+          <span>02</span>
+
+          <h3>Be Remembered</h3>
+
+          <p>
+            Turn your people, culture and achievements into stories.
+          </p>
+
+        </div>
+
+
+        <div class="system-box">
+
+          <span>03</span>
+
+          <h3>Be Chosen</h3>
+
+          <p>
+            Turn attention into enquiries and meaningful growth.
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- FORM -->
+
+  <section class="form-section" id="audit-form">
+
+    <div class="container form-wrap">
+
+      <div class="form-heading">
+
+        <div class="kicker">
+          GET YOUR FREE AUDIT
+        </div>
+
+        <h2>
+          Let's see what parents see.
+        </h2>
+
+        <p>
+          Tell us a little about your school.
+          We'll review its public digital presence and
+          share the key observations with you.
+        </p>
+
+      </div>
+
+
+      <form id="auditForm">
+
+        <div class="form-row">
+
+          <div class="field">
+
+            <label for="name">
+              Your Name *
+            </label>
+
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Your full name"
+              required
+            >
+
+          </div>
+
+
+          <div class="field">
+
+            <label for="school">
+              School Name *
+            </label>
+
+            <input
+              type="text"
+              id="school"
+              name="school"
+              placeholder="School / Institution name"
+              required
+            >
+
+          </div>
+
+        </div>
+
+
+        <div class="form-row">
+
+          <div class="field">
+
+            <label for="phone">
+              WhatsApp Number *
+            </label>
+
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              placeholder="+91 XXXXX XXXXX"
+              required
+            >
+
+          </div>
+
+
+          <div class="field">
+
+            <label for="website">
+              School Website
+            </label>
+
+            <input
+              type="url"
+              id="website"
+              name="website"
+              placeholder="https://yourwebsite.com"
+            >
+
+          </div>
+
+        </div>
+
+
+        <div class="field">
+
+          <label for="goal">
+            What would you most like to improve? *
+          </label>
+
+          <select id="goal" name="goal" required>
+
+            <option value="">
+              Select one
+            </option>
+
+            <option>
+              Website & Digital Presence
+            </option>
+
+            <option>
+              Admissions & Enquiries
+            </option>
+
+            <option>
+              Social Media & Content
+            </option>
+
+            <option>
+              Brand & Communication
+            </option>
+
+            <option>
+              Not sure — I want your recommendation
+            </option>
+
+          </select>
+
+        </div>
+
+
+        <button type="submit" class="btn submit">
+          Get My Free School Audit →
+        </button>
+
+        <div class="privacy">
+          Your information is used only to contact you about your audit.
+        </div>
+
+      </form>
+
+    </div>
+
+  </section>
+
+
+  <!-- FINAL -->
+
+  <section class="final">
+
+    <div class="container">
+
+      <div class="kicker" style="color:#d7b77a">
+        THE NEXT STEP
+      </div>
+
+      <h2>
+        Your school has already built something worth choosing.
+        <br>
+        Let's see whether parents can see it.
+      </h2>
+
+      <p>
+        Start with a free, honest look at your school's
+        digital presence.
+      </p>
+
+      <a href="#audit-form" class="btn btn-light">
+        Get My Free Audit →
+      </a>
+
+    </div>
+
+  </section>
+
+
+  <footer>
+
+    <strong>BRANDIVA DIGITAL</strong>
+    · School Growth & Communication Partner
+    <br><br>
+
+    hello@brandivadigital.com · +91 9102255770
+
+  </footer>
+
+
+  <!-- WHATSAPP FORM -->
+
+  <script>
+
+    document.getElementById("auditForm").addEventListener("submit", function(e){
+
+      e.preventDefault();
+
+      const name =
+        document.getElementById("name").value.trim();
+
+      const school =
+        document.getElementById("school").value.trim();
+
+      const phone =
+        document.getElementById("phone").value.trim();
+
+      const website =
+        document.getElementById("website").value.trim();
+
+      const goal =
+        document.getElementById("goal").value;
+
+
+      const message =
+`Hello BrandiVa,
+
+I would like to get a FREE School Digital Growth Audit.
+
+Name: ${name}
+School: ${school}
+WhatsApp: ${phone}
+Website: ${website || "Not provided"}
+Main area I want to improve: ${goal}
+
+Please let me know the next step.`;
+
+
+      const whatsappNumber = "919102255770";
+
+      const whatsappURL =
+        "https://wa.me/" +
+        whatsappNumber +
+        "?text=" +
+        encodeURIComponent(message);
+
+
+      window.open(whatsappURL, "_blank");
+
+    });
+
+  </script>
+
+</body>
+</html>
