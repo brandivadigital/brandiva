@@ -1,3 +1,224 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Contact BrandiVa Digital</title><meta name="description" content="Contact BrandiVa Digital for school websites, branding, social media and digital strategy."><link rel="stylesheet" href="style.css"></head><body><script src="header.js"></script><main>
-<section class="pagehero visual contact-hero"><div class="container"><div class="eyebrow">Let's Talk</div><h1>Maybe this is where your next chapter begins.</h1><p class="lead">Tell us a little about your institution or organisation. We'll start with a conversation—not a complicated sales pitch.</p></div></section>
-<section class="section"><div class="container contactbox"><div><h2>Start a conversation.</h2><p><strong>Email</strong><br><a href="mailto:hello@brandivadigital.com">hello@brandivadigital.com</a></p><p><strong>WhatsApp</strong><br><a href="https://wa.me/919102255770">+91 9102255770</a></p><p><strong>Based in</strong><br>Kolhapur, Maharashtra, India</p></div><form class="form" onsubmit="return sendWhatsApp(event)"><input id="name" name="name" placeholder="Your name" required><input id="phone" placeholder="Phone number"><select id="interest"><option>I'm interested in...</option><option>School Website</option><option>Social Media</option><option>Branding & Creative</option><option>Complete Digital Presence</option></select><textarea id="message" rows="5" placeholder="Tell us a little about your project"></textarea><button class="btn" type="submit">Send on WhatsApp →</button></form></div></section></main><script src="footer.js"></script><script>function sendWhatsApp(e){e.preventDefault();const n=document.getElementById('name').value,p=document.getElementById('phone').value,i=document.getElementById('interest').value,m=document.getElementById('message').value;const text=`Hello BrandiVa, my name is ${n}. Phone: ${p}. I am interested in: ${i}. Project details: ${m}`;window.open('https://wa.me/919102255770?text='+encodeURIComponent(text),'_blank');return false}</script></body></html>
+<!doctype html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+
+  <title>Let's Talk | BrandiVa Digital</title>
+
+  <meta
+    name="description"
+    content="Start a conversation with BrandiVa, a school growth and communication partner."
+  >
+
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<script src="header.js"></script>
+
+<main>
+
+
+<!-- =========================
+     HERO
+========================= -->
+
+<section class="pagehero visual contact-hero">
+
+  <div class="container">
+
+    <div class="eyebrow">
+      LET'S TALK
+    </div>
+
+    <h1>
+      Your school has a story.
+      <br>
+      Let's talk about it.
+    </h1>
+
+    <p class="lead">
+      Tell us where you are, what you're trying to achieve,
+      and what you feel is missing.
+    </p>
+
+  </div>
+
+</section>
+
+
+<!-- =========================
+     CONVERSATION
+========================= -->
+
+<section class="section">
+
+  <div class="container contactbox">
+
+    <div>
+
+      <div class="kicker">
+        START A CONVERSATION
+      </div>
+
+      <h2>
+        No complicated pitch.
+        Just a conversation.
+      </h2>
+
+      <p class="lead">
+        We start by understanding your school.
+        If we believe we can help, we'll show you how.
+      </p>
+
+
+      <p>
+        <strong>Email</strong><br>
+        <a href="mailto:hello@brandivadigital.com">
+          hello@brandivadigital.com
+        </a>
+      </p>
+
+
+      <p>
+        <strong>WhatsApp</strong><br>
+        <a href="https://wa.me/919102255770" target="_blank">
+          +91 9102255770
+        </a>
+      </p>
+
+
+      <p>
+        <strong>Based in</strong><br>
+        Kolhapur, Maharashtra, India
+      </p>
+
+    </div>
+
+
+    <!-- =========================
+         SIMPLE FORM
+    ========================= -->
+
+    <form
+      class="form"
+      onsubmit="return sendWhatsApp(event)">
+
+      <input
+        id="name"
+        name="name"
+        placeholder="Your name"
+        required
+      >
+
+      <input
+        id="school"
+        name="school"
+        placeholder="School / Institution name"
+      >
+
+      <textarea
+        id="message"
+        name="message"
+        rows="6"
+        placeholder="What would you like to talk about?"
+        required>
+      </textarea>
+
+      <button
+        class="btn"
+        type="submit">
+
+        Start the conversation →
+
+      </button>
+
+      <p class="small">
+        This will open WhatsApp with your message ready to send.
+      </p>
+
+    </form>
+
+  </div>
+
+</section>
+
+
+<!-- =========================
+     FINAL THOUGHT
+========================= -->
+
+<section class="section dark">
+
+  <div class="container center">
+
+    <div class="quote">
+      “You know your school.
+      We know how to communicate it.”
+    </div>
+
+    <p
+      class="lead"
+      style="color:#b9c8c9;max-width:650px;margin:25px auto 0">
+
+      Let's find out what your school could be
+      communicating better.
+
+    </p>
+
+  </div>
+
+</section>
+
+
+</main>
+
+
+<script src="footer.js"></script>
+
+
+<script>
+
+function sendWhatsApp(e) {
+
+  e.preventDefault();
+
+  const name =
+    document.getElementById('name').value;
+
+  const school =
+    document.getElementById('school').value;
+
+  const message =
+    document.getElementById('message').value;
+
+
+  const text =
+`Hello BrandiVa,
+
+My name is ${name}.
+School / Institution: ${school}
+
+I'd like to discuss:
+${message}`;
+
+
+  window.open(
+    'https://wa.me/919102255770?text='
+    + encodeURIComponent(text),
+    '_blank'
+  );
+
+  return false;
+
+}
+
+</script>
+
+</body>
+</html>
