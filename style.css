@@ -747,7 +747,7 @@ a{
 /* =========================
    MOBILE
 ========================= */
-
+@media(max-width:800px){
 .nav .links.open{
   display:flex;
   position:absolute;
