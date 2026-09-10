@@ -339,6 +339,423 @@
 </main>
 
 <script src="footer.js"></script>
+<!-- ================= FREE SCHOOL AUDIT POPUP ================= -->
 
+<style>
+
+.audit-popup-overlay{
+  position:fixed;
+  inset:0;
+  background:rgba(7,23,29,.72);
+  display:none;
+  align-items:center;
+  justify-content:center;
+  padding:20px;
+  z-index:99999;
+}
+
+.audit-popup-overlay.show{
+  display:flex;
+}
+
+.audit-popup{
+  width:min(560px,100%);
+  background:#f7f3eb;
+  position:relative;
+  padding:42px;
+  box-shadow:0 25px 80px rgba(0,0,0,.3);
+  animation:auditPopupIn .3s ease;
+}
+
+@keyframes auditPopupIn{
+  from{
+    opacity:0;
+    transform:translateY(20px) scale(.98);
+  }
+
+  to{
+    opacity:1;
+    transform:translateY(0) scale(1);
+  }
+}
+
+.audit-popup-close{
+  position:absolute;
+  right:18px;
+  top:14px;
+  border:0;
+  background:none;
+  font-size:28px;
+  line-height:1;
+  color:#536267;
+  cursor:pointer;
+}
+
+.audit-popup-kicker{
+  font-size:11px;
+  font-weight:700;
+  letter-spacing:2px;
+  text-transform:uppercase;
+  color:#a98448;
+  margin-bottom:12px;
+}
+
+.audit-popup h2{
+  margin:0 0 14px;
+  font-family:Georgia,"Times New Roman",serif;
+  font-size:36px;
+  line-height:1.12;
+  color:#102b35;
+}
+
+.audit-popup-sub{
+  margin:0 0 24px;
+  color:#64757a;
+  font-size:15px;
+  line-height:1.6;
+}
+
+.audit-popup-form{
+  display:grid;
+  gap:14px;
+}
+
+.audit-popup-form input,
+.audit-popup-form select{
+  width:100%;
+  padding:14px 15px;
+  border:1px solid #ccd5d2;
+  background:#fff;
+  font-family:Arial,Helvetica,sans-serif;
+  font-size:14px;
+  outline:none;
+}
+
+.audit-popup-form input:focus,
+.audit-popup-form select:focus{
+  border-color:#102b35;
+}
+
+.audit-popup-btn{
+  width:100%;
+  border:0;
+  padding:16px 20px;
+  background:#102b35;
+  color:#fff;
+  font-size:15px;
+  font-weight:700;
+  cursor:pointer;
+  margin-top:4px;
+}
+
+.audit-popup-btn:hover{
+  opacity:.92;
+}
+
+.audit-popup-note{
+  text-align:center;
+  font-size:11px;
+  color:#7b878a;
+  margin-top:10px;
+}
+
+@media(max-width:600px){
+
+  .audit-popup{
+    padding:30px 22px;
+    max-height:92vh;
+    overflow-y:auto;
+  }
+
+  .audit-popup h2{
+    font-size:29px;
+  }
+
+  .audit-popup-sub{
+    font-size:14px;
+  }
+
+}
+
+</style>
+
+
+<div class="audit-popup-overlay" id="auditPopup">
+
+  <div class="audit-popup">
+
+    <button
+      class="audit-popup-close"
+      id="auditPopupClose"
+      aria-label="Close">
+      ×
+    </button>
+
+
+    <div class="audit-popup-kicker">
+      FREE SCHOOL DIGITAL GROWTH AUDIT
+    </div>
+
+
+    <h2>
+      What do parents see when they search for your school?
+    </h2>
+
+
+    <p class="audit-popup-sub">
+      Get a free, honest look at your school's digital presence
+      and discover where you may be losing visibility, trust or enquiries.
+    </p>
+
+
+    <form
+      class="audit-popup-form"
+      id="auditPopupForm">
+
+
+      <input
+        type="text"
+        id="popupName"
+        placeholder="Your Name *"
+        required
+      >
+
+
+      <input
+        type="text"
+        id="popupSchool"
+        placeholder="School Name *"
+        required
+      >
+
+
+      <input
+        type="tel"
+        id="popupPhone"
+        placeholder="WhatsApp Number *"
+        required
+      >
+
+
+      <input
+        type="url"
+        id="popupWebsite"
+        placeholder="School Website (optional)"
+      >
+
+
+      <select
+        id="popupGoal"
+        required>
+
+        <option value="">
+          What would you most like to improve?
+        </option>
+
+        <option>
+          Website & Digital Presence
+        </option>
+
+        <option>
+          Admissions & Enquiries
+        </option>
+
+        <option>
+          Social Media & Content
+        </option>
+
+        <option>
+          Brand & Communication
+        </option>
+
+        <option>
+          Not sure — I want your recommendation
+        </option>
+
+      </select>
+
+
+      <button
+        type="submit"
+        class="audit-popup-btn">
+        Get My Free School Audit →
+      </button>
+
+    </form>
+
+
+    <div class="audit-popup-note">
+      Free · No obligation · No sales pressure
+    </div>
+
+  </div>
+
+</div>
+
+
+<script>
+
+(function(){
+
+  const popup =
+    document.getElementById("auditPopup");
+
+  const closeBtn =
+    document.getElementById("auditPopupClose");
+
+  const form =
+    document.getElementById("auditPopupForm");
+
+
+  /*
+    SHOW POPUP AFTER 5 SECONDS
+    ONLY ONCE PER BROWSER SESSION
+  */
+
+  if(
+    !sessionStorage.getItem(
+      "brandivaAuditPopupShown"
+    )
+  ){
+
+    setTimeout(function(){
+
+      popup.classList.add("show");
+
+      sessionStorage.setItem(
+        "brandivaAuditPopupShown",
+        "true"
+      );
+
+    },5000);
+
+  }
+
+
+  /* CLOSE BUTTON */
+
+  closeBtn.addEventListener(
+    "click",
+    function(){
+
+      popup.classList.remove("show");
+
+    }
+  );
+
+
+  /* CLICK OUTSIDE POPUP TO CLOSE */
+
+  popup.addEventListener(
+    "click",
+    function(e){
+
+      if(e.target === popup){
+
+        popup.classList.remove("show");
+
+      }
+
+    }
+  );
+
+
+  /* ESC KEY TO CLOSE */
+
+  document.addEventListener(
+    "keydown",
+    function(e){
+
+      if(e.key === "Escape"){
+
+        popup.classList.remove("show");
+
+      }
+
+    }
+  );
+
+
+  /* FORM → WHATSAPP */
+
+  form.addEventListener(
+    "submit",
+    function(e){
+
+      e.preventDefault();
+
+
+      const name =
+        document
+        .getElementById("popupName")
+        .value
+        .trim();
+
+
+      const school =
+        document
+        .getElementById("popupSchool")
+        .value
+        .trim();
+
+
+      const phone =
+        document
+        .getElementById("popupPhone")
+        .value
+        .trim();
+
+
+      const website =
+        document
+        .getElementById("popupWebsite")
+        .value
+        .trim();
+
+
+      const goal =
+        document
+        .getElementById("popupGoal")
+        .value;
+
+
+      const message =
+`Hello BrandiVa,
+
+I would like to get a FREE School Digital Growth Audit.
+
+Name: ${name}
+School: ${school}
+WhatsApp: ${phone}
+Website: ${website || "Not provided"}
+Main area I want to improve: ${goal}
+
+Please let me know the next step.`;
+
+
+      const whatsappNumber =
+        "919102255770";
+
+
+      const whatsappURL =
+        "https://wa.me/" +
+        whatsappNumber +
+        "?text=" +
+        encodeURIComponent(message);
+
+
+      window.open(
+        whatsappURL,
+        "_blank"
+      );
+
+    }
+  );
+
+})();
+
+</script>
+
+<!-- ================= END FREE SCHOOL AUDIT POPUP ================= -->
 </body>
 </html>
