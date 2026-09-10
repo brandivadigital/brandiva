@@ -748,7 +748,24 @@ a{
    MOBILE
 ========================= */
 
-@media(max-width:800px){
+.nav .links.open{
+  display:flex;
+  position:absolute;
+  top:100%;
+  left:0;
+  right:0;
+  flex-direction:column;
+  gap:0;
+  background:var(--paper);
+  padding:20px;
+  border-top:1px solid var(--line);
+  box-shadow:0 12px 25px rgba(0,0,0,.08);
+}
+
+.nav .links.open a{
+  padding:14px 0;
+  border-bottom:1px solid var(--line);
+}
 
   .links{
     display:none;
