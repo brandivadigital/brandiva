@@ -757,5 +757,109 @@ Please let me know the next step.`;
 </script>
 
 <!-- ================= END FREE SCHOOL AUDIT POPUP ================= -->
+  <!-- ================= FLOATING WHATSAPP CHAT ================= -->
+
+<style>
+
+.brandiva-whatsapp{
+  position:fixed;
+  right:22px;
+  bottom:22px;
+  z-index:99998;
+
+  display:flex;
+  align-items:center;
+  gap:10px;
+
+  background:#198754;
+  color:#fff;
+
+  padding:13px 18px 13px 15px;
+
+  border-radius:50px;
+
+  font-family:Arial,Helvetica,sans-serif;
+  font-size:14px;
+  font-weight:700;
+
+  text-decoration:none;
+
+  box-shadow:0 8px 25px rgba(0,0,0,.20);
+
+  transition:.25s ease;
+}
+
+.brandiva-whatsapp:hover{
+  transform:translateY(-3px);
+  box-shadow:0 12px 30px rgba(0,0,0,.25);
+}
+
+.brandiva-whatsapp-icon{
+  width:25px;
+  height:25px;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  background:#fff;
+  color:#198754;
+
+  border-radius:50%;
+
+  font-size:15px;
+  font-weight:900;
+}
+
+@media(max-width:600px){
+
+  .brandiva-whatsapp{
+    right:15px;
+    bottom:15px;
+
+    width:52px;
+    height:52px;
+
+    padding:0;
+
+    justify-content:center;
+
+    border-radius:50%;
+  }
+
+  .brandiva-whatsapp-text{
+    display:none;
+  }
+
+  .brandiva-whatsapp-icon{
+    width:29px;
+    height:29px;
+    font-size:17px;
+  }
+
+}
+
+</style>
+
+
+<a
+  class="brandiva-whatsapp"
+  href="https://wa.me/919102255770?text=Hello%20BrandiVa%2C%20I%27d%20like%20to%20know%20more%20about%20the%20Free%20School%20Digital%20Growth%20Audit."
+  target="_blank"
+  rel="noopener noreferrer"
+  aria-label="Chat with BrandiVa on WhatsApp"
+>
+
+  <span class="brandiva-whatsapp-icon">
+    ☎
+  </span>
+
+  <span class="brandiva-whatsapp-text">
+    Chat with BrandiVa
+  </span>
+
+</a>
+
+<!-- ================= END FLOATING WHATSAPP CHAT ================= -->
 </body>
 </html>
