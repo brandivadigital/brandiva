@@ -66,6 +66,11 @@ document.write(`
     style="margin-top:45px;padding-top:20px;border-top:1px solid #29404a">
 
     © 2026 BrandiVa Digital. All rights reserved.
+     <span style="margin-left:15px;">
+    <a href="privacy-policy.html" style="color:inherit;">
+      Privacy Policy
+    </a>
+  </span>
 
   </div>
 
