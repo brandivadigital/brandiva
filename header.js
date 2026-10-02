@@ -1,3 +1,43 @@
+// ================================
+// GOOGLE ADS TAG
+// ================================
+
+(function () {
+
+  // Prevent duplicate Google Tag
+  if (!document.querySelector('script[src*="AW-18417593104"]')) {
+
+    // Load Google gtag.js
+    const script = document.createElement('script');
+
+    script.async = true;
+    script.src =
+      'https://www.googletagmanager.com/gtag/js?id=AW-18417593104';
+
+    document.head.appendChild(script);
+
+    // Initialize Google Tag
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    window.gtag = gtag;
+
+    gtag('js', new Date());
+
+    gtag('config', 'AW-18417593104');
+
+  }
+
+})();
+
+
+// ================================
+// BRANDIVA HEADER
+// ================================
+
 document.write(`
 <header class="nav">
   <div class="container navin">
